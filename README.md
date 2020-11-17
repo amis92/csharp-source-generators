@@ -38,6 +38,33 @@ Template for github repo links:
 - [ValueObjectGenerator](https://github.com/RyotaMurohoshi/ValueObjectGenerator)  - ![stars](https://img.shields.io/github/stars/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=86400) C# source generator is for ValueObjects (ie.Wrapper classes).
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
 
+## Tips & Tricks
+
+Collection of tips and tricks (simple and brief to fit in Tweet):
+
+[Tweeted](https://twitter.com/raboof/status/1328426892882550784) by [@raboof](https://twitter.com/raboof) on Nov 16 2020 at 20:57:
+
+> See files emitted by [#SourceGenerators] by adding these properties to your (*.csproj) project file:
+>
+> ```xml
+> <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+> <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
+> ```
+
+[Tweeted](https://twitter.com/Chiser99/status/1301198611158499328) by [@Chiser99](https://twitter.com/Chiser99) on Sep 02 2020 at 06:41:
+
+> I made a thing: https://github.com/chsienki/Kittitas
+>
+> If you're building Roslyn Source Generators or Analyzers check it out, it makes debugging them inside the compiler easier. #roslyn #csharp #dotnetcore #sourcegenerators #analyzers
+
+
+  [#SourceGenerators]: https://twitter.com/hashtag/SourceGenerators?src=hashtag_click
+  [#sourcegenerators]: https://twitter.com/hashtag/sourcegenerators?src=hashtag_click
+  [#roslyn]: https://twitter.com/hashtag/roslyn?src=hashtag_click
+  [#csharp]: https://twitter.com/hashtag/csharp?src=hashtag_click
+  [#dotnetcore]: https://twitter.com/hashtag/dotnetcore?src=hashtag_click
+  [#analyzers]: https://twitter.com/hashtag/analyzers?src=hashtag_click
+
 ## Articles
 
 - [Source Generators in .NET 5 with ReSharper](https://blog.jetbrains.com/dotnet/2020/11/12/source-generators-in-net-5-with-resharper/) (2020-11-20) introduces source generators and briefly mentions how they are being worked into the ReSharper product
