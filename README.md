@@ -44,7 +44,7 @@ Collection of tips and tricks (simple and brief to fit in Tweet):
 
 > See files emitted by [#SourceGenerators] by adding these properties to your (*.csproj) project file:
 >
-> ```c#
+> ```xml
 > <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
 > <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
 > ```
