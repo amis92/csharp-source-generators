@@ -42,19 +42,21 @@ Template for github repo links:
 
 Collection of tips and tricks (simple and brief to fit in Tweet):
 
+[Tweeted](https://twitter.com/raboof/status/1328426892882550784) by [@raboof](https://twitter.com/raboof) on Nov 16 2020 at 20:57:
+
 > See files emitted by [#SourceGenerators] by adding these properties to your (*.csproj) project file:
 >
 > ```xml
 > <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
 > <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
 > ```
-> Source: https://twitter.com/raboof/status/1328426892882550784 on Nov 16, 2020 at 20:57 by [@raboof](https://twitter.com/raboof)
+
+[Tweeted](https://twitter.com/Chiser99/status/1301198611158499328) by [@Chiser99](https://twitter.com/Chiser99) on Sep 02 2020 at 06:41:
 
 > I made a thing: https://github.com/chsienki/Kittitas
 >
 > If you're building Roslyn Source Generators or Analyzers check it out, it makes debugging them inside the compiler easier. #roslyn #csharp #dotnetcore #sourcegenerators #analyzers
->
-> Source: https://twitter.com/Chiser99/status/1301198611158499328 on Sep 02, 2020 at 06:41 by [@Chiser99](https://twitter.com/Chiser99)
+
 
   [#SourceGenerators]: https://twitter.com/hashtag/SourceGenerators?src=hashtag_click
   [#sourcegenerators]: https://twitter.com/hashtag/sourcegenerators?src=hashtag_click
