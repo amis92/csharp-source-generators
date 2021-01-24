@@ -92,6 +92,7 @@ Collection of tips and tricks (simple and brief to fit in Tweet):
 - [How to generate code using Roslyn source generators in real world scenarios](https://www.cazzulino.com/source-generators.html) (2020-09-17) rich story of how ThisAssembly generator was written using Scriban templates.
 - [.NET Blog 'New C# Source Generator Samples' post](https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/) (2020-08-25) that shows some simple samples.
 - [.NET Blog 'Introducing C# Source Generators' post](https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/) (2020-04-29) that announces the feature.
+- [4 ways to generate code in C# — Including Source Generators in .NET 5](https://levelup.gitconnected.com/four-ways-to-generate-code-in-c-including-source-generators-in-net-5-9e6817db425) (2021-01-19) demonstrates the comparison between Source Generators, T4 template and Reflection, etc.
 
 ## Videos
 
