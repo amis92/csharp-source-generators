@@ -52,6 +52,7 @@ Template for github repo links:
 - [Tinyhand](https://github.com/archi-Doc/Tinyhand)  - ![stars](https://img.shields.io/github/stars/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=86400) - Tiny and simple data format/serializer using a source generator.
 - [ValueObjectGenerator](https://github.com/RyotaMurohoshi/ValueObjectGenerator)  - ![stars](https://img.shields.io/github/stars/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=86400) C# source generator is for ValueObjects (ie.Wrapper classes).
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
+- [MapTo](https://github.com/mrtaikandi/MapTo)  - ![stars](https://img.shields.io/github/stars/mrtaikandi/mapto?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/mrtaikandi/mapto?style=flat-square&cacheSeconds=86400) - A convention based object to object mapper similar to Automapper.
 
 ## Tips & Tricks
 
