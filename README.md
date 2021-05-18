@@ -88,6 +88,14 @@ Collection of tips and tricks (simple and brief to fit in Tweet):
 >
 > If you're building Roslyn Source Generators or Analyzers check it out, it makes debugging them inside the compiler easier. #roslyn #csharp #dotnetcore #sourcegenerators #analyzers
 
+Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/CsWin32/issues/7):
+
+> If your build failed in a *_wpftmp.csproj file you need to add following property to your (*.csproj) project file:
+> ```xml
+> <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
+> ```
+> 
+> and use at least .NET 5.0.102 SDK
 
   [#SourceGenerators]: https://twitter.com/hashtag/SourceGenerators?src=hashtag_click
   [#sourcegenerators]: https://twitter.com/hashtag/sourcegenerators?src=hashtag_click
