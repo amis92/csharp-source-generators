@@ -73,6 +73,12 @@ Template for entries:
 
 Collection of tips and tricks (simple and brief to fit in Tweet):
 
+[Tweeted](https://twitter.com/raboof/status/1397296571801288704) by [@raboof](https://twitter.com/raboof) on May 25 2021 at 23:00:
+
+> TIL to debug a source generator in VS 16.10: upgrade [Microsoft.CodeAnalysis.CSharp to 3.10.\*](https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/3.10.0-3.final), add `<IsRoslynComponent>true</IsRoslynComponent>` to source generator project, select **Roslyn Component** for **Launch** in **Project Properties Debug** page, choose **Target** then <kbd>F5</kbd> :rocket:
+>
+> ![Source Generator debugger](https://docs.microsoft.com/en-us/visualstudio/releases/2019/media/16.10/16.10_p2_source_generators_debugger.png)
+
 [Tweeted](https://twitter.com/raboof/status/1328426892882550784) by [@raboof](https://twitter.com/raboof) on Nov 16 2020 at 20:57:
 
 > See files emitted by [#SourceGenerators] by adding these properties to your (*.csproj) project file:
