@@ -68,6 +68,7 @@ Template for entries:
 - [ValueChangedGenerator](https://github.com/ufcpp/ValueChangedGenerator)  - ![stars](https://img.shields.io/github/stars/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=86400) for generating PropertyChanged from inner struct members.
 - [ValueObjectGenerator](https://github.com/RyotaMurohoshi/ValueObjectGenerator)  - ![stars](https://img.shields.io/github/stars/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=86400) C# source generator is for ValueObjects (ie.Wrapper classes).
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
+- [Jab](https://github.com/pakrym/jab)  - ![stars](https://img.shields.io/github/stars/pakrym/jab?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/pakrym/jab?style=flat-square&cacheSeconds=86400) - Compile Time Dependency Injection
 
 ## Tips & Tricks
 
