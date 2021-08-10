@@ -8,6 +8,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 ## Documentation and samples
 
+- [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview) official documentation.
 - [dotnet/roslyn feature design document](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md) describing the compiler feature.
 - [dotnet/roslyn cookbook](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.cookbook.md) to help with generator creation.
 - [dotnet/roslyn-sdk samples](https://github.com/dotnet/roslyn-sdk/tree/master/samples/CSharp/SourceGenerators) show how to implement a source generator and use features like external package references (*inside* generators). Includes AutoNotify, Csv, Maths, Mustache, and SettingsXml.
