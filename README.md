@@ -94,6 +94,7 @@ Template for entries:
 - [ValueLink](https://github.com/archi-Doc/ValueLink)  - ![stars](https://img.shields.io/github/stars/archi-Doc/ValueLink?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/ValueLink?style=flat-square&cacheSeconds=86400) A C# Library for creating and managing multiple links between objects.
 - [ValueObjectGenerator](https://github.com/RyotaMurohoshi/ValueObjectGenerator)  - ![stars](https://img.shields.io/github/stars/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=86400) C# source generator is for ValueObjects (ie.Wrapper classes).
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
+- [Mediator](https://github.com/martinothamar/Mediator)  - ![stars](https://img.shields.io/github/stars/martinothamar/Mediator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/Mediator?style=flat-square&cacheSeconds=86400) - a high performance implementation of Mediator pattern in .NET using source generators.
 
 ## Tips & Tricks
 
