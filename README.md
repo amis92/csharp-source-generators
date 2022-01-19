@@ -14,7 +14,8 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [dotnet/roslyn-sdk samples](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators) show how to implement a source generator and use features like external package references (*inside* generators). Includes AutoNotify, Csv, Maths, Mustache, and SettingsXml.
 - [SourceGeneratorPlayground](https://wengier.com/SourceGeneratorPlayground) - an online Source Generator Playground to play with generator ideas 💡 without any setup noise. [Source repo](https://github.com/davidwengier/SourceGeneratorPlayground).
 - [davidwengier/SourceGeneratorTemplate](https://github.com/davidwengier/SourceGeneratorTemplate)  - ![stars](https://img.shields.io/github/stars/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=86400) A basic template for writing a C# source generator, from the Roslyn dev.
-
+- [Mastering at Source Generators](https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3fca) Sample about creating csharp files from an entity using different templates such as Controller, Domain Service, Repository.
+- 
 ## Source Generators
 
 <!--
