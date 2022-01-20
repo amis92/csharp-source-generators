@@ -18,7 +18,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 ## Source Generators
 
 <!--
-Template for entries:
+  Sorted alphabetically. Template for entries:
 - [REPO](https://github.com/REPO) - ![stars](https://img.shields.io/github/stars/REPO?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/REPO?style=flat-square&cacheSeconds=86400)
 -->
 
@@ -26,6 +26,7 @@ Template for entries:
 - [ApiClientGenerator](https://github.com/surgicalcoder/ApiClientGenerator) - ![stars](https://img.shields.io/github/stars/surgicalcoder/ApiClientGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/surgicalcoder/ApiClientGenerator?style=flat-square&cacheSeconds=86400) Generates a strongly typed HttpClient based off MVC's default routing. Can be used to output into multiple projects, like Blazor WebAssembly.
 - [AttributesSourceGeneratorHelper](https://github.com/musictopia2/AttributesSourceGeneratorHelper) - ![stars](https://img.shields.io/github/stars/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=86400)  A source generator to help another generator by producing attributes.  Anything that inherits from Attribute will be sent to the client so you don't have to build strings for attributes.
 - [AutoDeconstructable](https://github.com/nemesissoft/Nemesis.TextParsers/tree/master/Nemesis.TextParsers.CodeGen/Deconstructable)  - ![stars](https://img.shields.io/github/stars/nemesissoft/Nemesis.TextParsers?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/nemesissoft/Nemesis.TextParsers?style=flat-square&cacheSeconds=86400) Generator for efficient and automatic flat text serializer/deserializer using [Deconstructable aspect](https://github.com/nemesissoft/Nemesis.TextParsers/blob/master/Specification.md#deconstructables) in [NTP](https://github.com/nemesissoft/Nemesis.TextParsers) library.
+- [AutoFilterer.Generators](https://github.com/enisn/AutoFilterer/blob/develop/docs/generators/AutoFilterer-Generators.md) - ![stars](https://img.shields.io/github/stars/enisn/AutoFilterer?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/enisn/AutoFilterer?style=flat-square&cacheSeconds=86400) AutoFilterer.Generators aims to generate filter DTOs from entities automatically via using dotnet source generators.
 - [AutoInterface](https://github.com/beakona/AutoInterface)  - ![stars](https://img.shields.io/github/stars/beakona/AutoInterface?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/beakona/AutoInterface?style=flat-square&cacheSeconds=86400) interface-to-member source generator.
 - [Avalonia.NameGenerator](https://github.com/AvaloniaUI/Avalonia.NameGenerator)  - ![stars](https://img.shields.io/github/stars/avaloniaui/Avalonia.NameGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/avaloniaui/Avalonia.NameGenerator?style=flat-square&cacheSeconds=86400) Generates typed references to named [Avalonia](https://github.com/avaloniaui) XAML controls.
 - [avatar](https://github.com/kzu/avatar)  - ![stars](https://img.shields.io/github/stars/kzu/avatar?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/kzu/avatar?style=flat-square&cacheSeconds=86400) A modern compile-time generated interception/proxy library.
@@ -105,9 +106,10 @@ Template for entries:
 - [StructPacker](https://github.com/RudolfKurka/StructPacker)  - ![stars](https://img.shields.io/github/stars/RudolfKurka/StructPacker?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RudolfKurka/StructPacker?style=flat-square&cacheSeconds=86400) binary serializer that auto-generates C# serialization code to achieve peak runtime performance and efficiency.
 - [Svg to C# Source Generators](https://github.com/wieslawsoltes/Svg.Skia)  - ![stars](https://img.shields.io/github/stars/wieslawsoltes/Svg.Skia?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/wieslawsoltes/Svg.Skia?style=flat-square&cacheSeconds=86400) SVGC compiles SVG drawing markup to C# using SkiaSharp as rendering engine. SVGC can be also used as codegen for upcoming C# 9 Source Generator feature.
 - [ThisAssembly](https://github.com/kzu/ThisAssembly)  - ![stars](https://img.shields.io/github/stars/kzu/ThisAssembly?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/kzu/ThisAssembly?style=flat-square&cacheSeconds=86400) Exposes project and assembly level information as constants in the ThisAssembly class.
+- [Thunderboltloc](https://github.com/AlyElhaddad/ThunderboltIoc) - ![stars](https://img.shields.io/github/stars/AlyElhaddad/ThunderboltIoc?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/AlyElhaddad/ThunderboltIoc?style=flat-square&cacheSeconds=86400) One of the very first IoC frameworks for .Net that has no reflection.
+- [Tinyhand](https://github.com/archi-Doc/Tinyhand)  - ![stars](https://img.shields.io/github/stars/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=86400) - Tiny and simple data format/serializer using a source generator.
 - [ToString](https://github.com/Burgyn/MMLib.ToString)  - ![stars](https://img.shields.io/github/stars/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=86400) - C# source generator for implementing `ToString` override like `record` type.
 - [Transplator](https://github.com/atifaziz/Transplator)  - ![stars](https://img.shields.io/github/stars/atifaziz/Transplator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/atifaziz/Transplator?style=flat-square&cacheSeconds=86400) A simple C# source generator for text templates.
-- [Tinyhand](https://github.com/archi-Doc/Tinyhand)  - ![stars](https://img.shields.io/github/stars/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=86400) - Tiny and simple data format/serializer using a source generator.
 - [TxtToListGenerator](https://github.com/musictopia2/TxtToListGenerator) - ![stars](https://img.shields.io/github/stars/musictopia2/TxtToListGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/TxtToListGenerator?style=flat-square&cacheSeconds=86400)  A source generator where if you have a text file as additional file and you have a list ordered by return carriages, then it produces either a list of int or a list of string in c#.
 - [ValueChangedGenerator](https://github.com/ufcpp/ValueChangedGenerator)  - ![stars](https://img.shields.io/github/stars/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=86400) for generating PropertyChanged from inner struct members.
 - [ValueLink](https://github.com/archi-Doc/ValueLink)  - ![stars](https://img.shields.io/github/stars/archi-Doc/ValueLink?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/ValueLink?style=flat-square&cacheSeconds=86400) A C# Library for creating and managing multiple links between objects.
@@ -157,7 +159,11 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
 
 ## Articles
 
-<!-- Sorted from newest: -->
+<!--
+  Sorted from newest. Please follow the template:
+  - [Title](URL) (YYYY-MM-DD) short description.
+-->
+
 - [Mastering at Source Generators](https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3fca) (22-01-15) Sample about creating csharp files from an entity using different templates such as Controller, Domain Service, Repository.
 - [Using C# Source Generators to create an external DSL](https://devblogs.microsoft.com/dotnet/using-c-source-generators-to-create-an-external-dsl/) (2021-01-27) that shows how to implement a simple DSL.
 - [4 ways to generate code in C# — Including Source Generators in .NET 5](https://levelup.gitconnected.com/four-ways-to-generate-code-in-c-including-source-generators-in-net-5-9e6817db425) (2021-01-19) demonstrates the comparison between Source Generators, T4 template and Reflection, etc.
@@ -172,7 +178,10 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
 
 ## Videos
 
-<!-- Sorted from newest: -->
+<!--
+  Sorted from newest. Please follow the template:
+  - [Title](URL) (YYYY-MM-DD) short description.
+-->
 
 - [C# Source Generators - Write code that writes code - David Wengier](https://www.youtube.com/watch?v=pqLs7X6Cr6s) (2020-11-13) Roslyn dev takes deep dive into the topic.
 - [.NET Languages and Runtime Community Standup - Source Generators](https://www.youtube.com/watch?v=A4479Etdx4I) (2020-10-08) shows how Generators work and how they can be tested.
