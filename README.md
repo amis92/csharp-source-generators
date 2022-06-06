@@ -178,7 +178,7 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
   Sorted from newest. Please follow the template:
   - [Title](URL) (YYYY-MM-DD) short description.
 -->
-
+- [Series: Creating a source generator](https://andrewlock.net/series/creating-a-source-generator/) (2022-02-01) Complete series about how to create an incremental source generator, using the APIs introduced in .NET 6.
 - [Mastering at Source Generators](https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3fca) (2022-01-15) Generating CRUD controller from DTO model using text template.
 - [Using C# Source Generators to create an external DSL](https://devblogs.microsoft.com/dotnet/using-c-source-generators-to-create-an-external-dsl/) (2021-01-27) that shows how to implement a simple DSL.
 - [4 ways to generate code in C# — Including Source Generators in .NET 5](https://levelup.gitconnected.com/four-ways-to-generate-code-in-c-including-source-generators-in-net-5-9e6817db425) (2021-01-19) demonstrates the comparison between Source Generators, T4 template and Reflection, etc.
