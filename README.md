@@ -131,12 +131,13 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Tinyhand](https://github.com/archi-Doc/Tinyhand)  - ![stars](https://img.shields.io/github/stars/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/Tinyhand?style=flat-square&cacheSeconds=86400) - Tiny and simple data format/serializer using a source generator.
 - [ToString](https://github.com/Burgyn/MMLib.ToString)  - ![stars](https://img.shields.io/github/stars/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=86400) - C# source generator for implementing `ToString` override like `record` type.
 - [Transplator](https://github.com/atifaziz/Transplator)  - ![stars](https://img.shields.io/github/stars/atifaziz/Transplator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/atifaziz/Transplator?style=flat-square&cacheSeconds=86400) A simple C# source generator for text templates.
+- [TupleOverloadGenerator](https://github.com/ProphetLamb/TupleOverloadGenerator) - ![stars](https://img.shields.io/github/stars/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=86400) - Overload `params` array parameter with tuples avoiding heap allocations.
 - [TxtToListGenerator](https://github.com/musictopia2/TxtToListGenerator) - ![stars](https://img.shields.io/github/stars/musictopia2/TxtToListGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/TxtToListGenerator?style=flat-square&cacheSeconds=86400)  A source generator where if you have a text file as additional file and you have a list ordered by return carriages, then it produces either a list of int or a list of string in c#.
 - [ValueChangedGenerator](https://github.com/ufcpp/ValueChangedGenerator)  - ![stars](https://img.shields.io/github/stars/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ufcpp/ValueChangedGenerator?style=flat-square&cacheSeconds=86400) for generating PropertyChanged from inner struct members.
 - [ValueLink](https://github.com/archi-Doc/ValueLink)  - ![stars](https://img.shields.io/github/stars/archi-Doc/ValueLink?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/ValueLink?style=flat-square&cacheSeconds=86400) A C# Library for creating and managing multiple links between objects.
 - [ValueObjectGenerator](https://github.com/RyotaMurohoshi/ValueObjectGenerator)  - ![stars](https://img.shields.io/github/stars/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/RyotaMurohoshi/ValueObjectGenerator?style=flat-square&cacheSeconds=86400) C# source generator is for ValueObjects (ie.Wrapper classes).
 - [Vogen](https://github.com/SteveDunn/Vogen)  - ![stars](https://img.shields.io/github/stars/SteveDunn/Vogen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/SteveDunn/Vogen?style=flat-square&cacheSeconds=86400) C# source generator and code analyser that generates strongly typed domain identities.
-- [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types. 
+- [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
 
 ## Tips & Tricks
 
@@ -169,7 +170,7 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
 > ```xml
 > <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
 > ```
-> 
+>
 > and use at least .NET 5.0.102 SDK
 
   [#SourceGenerators]: https://twitter.com/hashtag/SourceGenerators?src=hashtag_click
