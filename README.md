@@ -1,10 +1,18 @@
 # C# Source Generators
-
+  * [Documentation and samples](#documentation-and-samples)
+  * [Source Generators](#source-generators)
+  * [Tips & Tricks](#tips--tricks)
+  * [Articles](#articles)
+  * [Videos](#videos)
+  * [Demo, PoC and excercise projects](#demo-poc-and-excercise-projects)
+  * [Projects using custom Source Generators "internally"]([#projects-using-custom-source-generators-internally)
+---
 A list of C# Source Generators (not necessarily awesome), because I haven't found a good list yet.
 
 **C# Source Generators** is a Roslyn compiler feature introduced in C#9/.NET 5. It lets C# developers inspect user code and generate new C# source files that can be added to a compilation.
 
 Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sourcegenerator) to your generator repo - let's get it started!
+
 
 ## Documentation and samples
 
