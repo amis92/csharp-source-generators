@@ -1,6 +1,7 @@
 # C# Source Generators
   * [Documentation and samples](#documentation-and-samples)
   * [Source Generators](#source-generators)
+  * [Helpers & Utils](#helpers--utils)
   * [Tips & Tricks](#tips--tricks)
   * [Articles](#articles)
   * [Videos](#videos)
@@ -35,7 +36,6 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [AnyOf](https://github.com/StefH/AnyOf) - ![stars](https://img.shields.io/github/stars/StefH/AnyOf?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/StefH/AnyOf?style=flat-square&cacheSeconds=86400) The Source Generator creates a `AnyOf<First, TSecond, ...>` type to handle multiple defined types as input parameters for methods.
 - [ApiClientGenerator](https://github.com/surgicalcoder/ApiClientGenerator) - ![stars](https://img.shields.io/github/stars/surgicalcoder/ApiClientGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/surgicalcoder/ApiClientGenerator?style=flat-square&cacheSeconds=86400) Generates a strongly typed HttpClient based off MVC's default routing. Can be used to output into multiple projects, like Blazor WebAssembly.
 - [Architect.DomainModeling](https://github.com/TheArchitectDev/Architect.DomainModeling) - ![stars](https://img.shields.io/github/stars/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=86400) A complete Domain-Driven Design (DDD) toolset for implementing domain models, including base types and source generators for ValueObjects, WrapperValueObjects, Entities, and Identities.
-- [AttributesSourceGeneratorHelper](https://github.com/musictopia2/AttributesSourceGeneratorHelper) - ![stars](https://img.shields.io/github/stars/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=86400)  A source generator to help another generator by producing attributes.  Anything that inherits from Attribute will be sent to the client so you don't have to build strings for attributes.
 - [AutoCtor](https://github.com/distantcam/AutoCtor) - ![stars](https://img.shields.io/github/stars/distantcam/AutoCtor?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/distantcam/AutoCtor?style=flat-square&cacheSeconds=86400) AutoCtor is a Roslyn Source Generator that will automatically create a constructor for your class for use with constructor Dependency Injection.
 - [AutoDeconstructable](https://github.com/nemesissoft/Nemesis.TextParsers/tree/master/Nemesis.TextParsers.CodeGen/Deconstructable)  - ![stars](https://img.shields.io/github/stars/nemesissoft/Nemesis.TextParsers?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/nemesissoft/Nemesis.TextParsers?style=flat-square&cacheSeconds=86400) Generator for efficient and automatic flat text serializer/deserializer using [Deconstructable aspect](https://github.com/nemesissoft/Nemesis.TextParsers/blob/master/Specification.md#deconstructables) in [NTP](https://github.com/nemesissoft/Nemesis.TextParsers) library.
 - [AutoFilterer.Generators](https://github.com/enisn/AutoFilterer/blob/develop/docs/generators/AutoFilterer-Generators.md) - ![stars](https://img.shields.io/github/stars/enisn/AutoFilterer?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/enisn/AutoFilterer?style=flat-square&cacheSeconds=86400) AutoFilterer.Generators aims to generate filter DTOs from entities automatically via using dotnet source generators.
@@ -52,7 +52,6 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Breezy](https://github.com/Ludovicdln/Breezy)	- ![stars](https://img.shields.io/github/stars/Ludovicdln/Breezy?style=flat-square&cacheSeconds=604800)	![last commit](https://img.shields.io/github/last-commit/ludovicdln/Breezy?style=flat-square&cacheSeconds=86400) Micro ORM with source generator.
 - [Buildenator](https://github.com/progala2/Buildenator)  - ![stars](https://img.shields.io/github/stars/progala2/Buildenator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/progala2/Buildenator?style=flat-square&cacheSeconds=86400) Generate data builder classes for testing purposes (and not only) for your entities. Autofixture + Moq extensions.
 - [Cloneable](https://github.com/mostmand/Cloneable)  - ![stars](https://img.shields.io/github/stars/mostmand/Cloneable?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/mostmand/Cloneable?style=flat-square&cacheSeconds=86400) auto-generate Clone method.
-- [CommonSourceGeneratorsHelpers](https://github.com/musictopia2/CommonSourceGeneratorsHelpers) - ![stars](https://img.shields.io/github/stars/musictopia2/CommonSourceGeneratorsHelpers?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/CommonSourceGeneratorsHelpers?style=flat-square&cacheSeconds=86400)  A generator to create many helpers for source generators to use to make up that its very difficult to reference third party libraries in source generators including extensions and a source code string builder.
 - [ComputeSharp](https://github.com/Sergio0694/ComputeSharp)  - ![stars](https://img.shields.io/github/stars/Sergio0694/ComputeSharp?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Sergio0694/ComputeSharp?style=flat-square&cacheSeconds=86400) A .NET library to run C# code in parallel on the GPU through DX12 and dynamically generated HLSL compute shaders, which are transpiled from C# and precompiled at build-time using source generators.
 - [CoreWCF](https://github.com/CoreWCF/CoreWCF)  - ![stars](https://img.shields.io/github/stars/CoreWCF/CoreWCF?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/CoreWCF/CoreWCF?style=flat-square&cacheSeconds=86400) CoreWCF provides support of WCF server side code on .NET Core / .NET6. CoreWCF allows users to inject services into `OperationContract` implementation using a source generator to provide an `OperationContract` implementation that fits the expected `ServiceContract`. The supplied implementation fetch services from the DI container the same way the `[FromServices]` attribute works in ASP.NET core MVC Controllers. The source generator supports both a dedicated `[Injected]` attribute and the ASP.NET Core MVC `[FromServices]` attribute.
 - [Credfeto.Enumeration.Source.Generation](https://github.com/credfeto/credfeto-enum-source-generation)  - ![stars](https://img.shields.io/github/stars/credfeto/credfeto-enum-source-generation?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/credfeto/credfeto-enum-source-generation?style=flat-square&cacheSeconds=86400) Enum to text generator for enums - generates strongly typed enums for all enums in the assembly, and using `EnumText` attribute for third party enums.  Also includes an analyzer to ensure that all enum usages use the `.GetName` extension method rather than `.ToString`.
@@ -171,6 +170,17 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Vogen](https://github.com/SteveDunn/Vogen)  - ![stars](https://img.shields.io/github/stars/SteveDunn/Vogen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/SteveDunn/Vogen?style=flat-square&cacheSeconds=86400) C# source generator and code analyser that generates strongly typed domain identities.
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
 
+## Helpers & Utils
+
+<!--
+  Sorted alphabetically. Template for entries:
+- [REPO](https://github.com/REPO) - ![stars](https://img.shields.io/github/stars/REPO?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/REPO?style=flat-square&cacheSeconds=86400)
+-->
+
+- [AttributesSourceGeneratorHelper](https://github.com/musictopia2/AttributesSourceGeneratorHelper) - ![stars](https://img.shields.io/github/stars/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/AttributesSourceGeneratorHelper?style=flat-square&cacheSeconds=86400)  A source generator to help another generator by producing attributes.  Anything that inherits from Attribute will be sent to the client so you don't have to build strings for attributes.
+- [CommonSourceGeneratorsHelpers](https://github.com/musictopia2/CommonSourceGeneratorsHelpers) - ![stars](https://img.shields.io/github/stars/musictopia2/CommonSourceGeneratorsHelpers?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/CommonSourceGeneratorsHelpers?style=flat-square&cacheSeconds=86400)  A generator to create many helpers for source generators to use to make up that its very difficult to reference third party libraries in source generators including extensions and a source code string builder.
+- [SourceGeneratorUtils](https://github.com/thenameless314159/SourceGeneratorUtils) - ![stars](https://img.shields.io/github/stars/thenameless314159/SourceGeneratorUtils?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/thenameless314159/SourceGeneratorUtils?style=flat-square&cacheSeconds=86400)  An essential library equipped with utility functions and helpers to aid in writing source files for source generators or for general purposes. Based on the `System.Text.Json` source generator architecture for best-practices.
+
 ## Tips & Tricks
 
 Collection of tips and tricks (simple and brief to fit in Tweet):
@@ -211,6 +221,17 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
   [#csharp]: https://twitter.com/hashtag/csharp?src=hashtag_click
   [#dotnetcore]: https://twitter.com/hashtag/dotnetcore?src=hashtag_click
   [#analyzers]: https://twitter.com/hashtag/analyzers?src=hashtag_click
+
+Reference local projects or embed NuGet packages to source generator assemblies [dotnet/roslyn#47517](https://github.com/dotnet/roslyn/discussions/47517#discussioncomment-64145):
+
+> You can add a dependency to a source generator in the same solution through three steps:
+> 
+> 1. Add a `<PackageReference>`, making sure to set both `GeneratePathProperty="true"` and `PrivateAssets="all"`
+> 2. Add a build target to add `<TargetPathWithTargetPlatformMoniker>` elements as part of GetTargetPath, and add all the required dependency assemblies inside this target, making sure to set `IncludeRuntimeDependency="false"`
+> 3. Update `<GetTargetPathDependsOn>` to ensure the target from the previous step is used
+> 
+> You can see an example of these steps here:
+> https://github.com/dotnet/roslyn-sdk/blob/0313c80ed950ac4f4eef11bb2e1c6d1009b328c4/samples/CSharp/SourceGenerators/SourceGeneratorSamples/SourceGeneratorSamples.csproj#L13-L30
 
 ## Articles
 
