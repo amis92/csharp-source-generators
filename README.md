@@ -224,6 +224,8 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
 
 Reference local projects or embed NuGet packages to source generator assemblies [dotnet/roslyn#47517](https://github.com/dotnet/roslyn/discussions/47517#discussioncomment-64145):
 
+⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with lower version. If you can, please avoid embedding additional DLLs/packages.
+
 > You can add a dependency to a source generator in the same solution through three steps:
 > 
 > 1. Add a `<PackageReference>`, making sure to set both `GeneratePathProperty="true"` and `PrivateAssets="all"`
