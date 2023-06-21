@@ -1,7 +1,7 @@
 # C# Source Generators
   * [Documentation and samples](#documentation-and-samples)
   * [Source Generators](#source-generators)
-  * [Helpers & Utils](#helpers--utils)
+  * [Meta - libs and generators for other generators](#meta--libs-and-generators-for-other-generators)
   * [Tips & Tricks](#tips--tricks)
   * [Articles](#articles)
   * [Videos](#videos)
