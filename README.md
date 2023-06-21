@@ -226,6 +226,8 @@ Reference local projects or embed NuGet packages to source generator assemblies 
 
 ⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with lower version. If you can, please avoid embedding additional DLLs/packages.
 
+⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with lower version. If you can, please avoid embedding additional DLLs/packages.
+
 > You can add a dependency to a source generator in the same solution through three steps:
 > 
 > 1. Add a `<PackageReference>`, making sure to set both `GeneratePathProperty="true"` and `PrivateAssets="all"`
