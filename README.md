@@ -170,7 +170,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Vogen](https://github.com/SteveDunn/Vogen)  - ![stars](https://img.shields.io/github/stars/SteveDunn/Vogen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/SteveDunn/Vogen?style=flat-square&cacheSeconds=86400) C# source generator and code analyser that generates strongly typed domain identities.
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject)  - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
 
-## Helpers & Utils
+## Meta - libs and generators for other generators
 
 <!--
   Sorted alphabetically. Template for entries:
