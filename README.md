@@ -1,7 +1,7 @@
 # C# Source Generators
   * [Documentation and samples](#documentation-and-samples)
   * [Source Generators](#source-generators)
-  * [Meta - libs and generators for other generators](#meta--libs-and-generators-for-other-generators)
+  * [Meta - libs and generators for other generators](#meta---libs-and-generators-for-other-generators)
   * [Tips & Tricks](#tips--tricks)
   * [Articles](#articles)
   * [Videos](#videos)
@@ -223,8 +223,6 @@ Build failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/
   [#analyzers]: https://twitter.com/hashtag/analyzers?src=hashtag_click
 
 Reference local projects or embed NuGet packages to source generator assemblies [dotnet/roslyn#47517](https://github.com/dotnet/roslyn/discussions/47517#discussioncomment-64145):
-
-⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with lower version. If you can, please avoid embedding additional DLLs/packages.
 
 ⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with lower version. If you can, please avoid embedding additional DLLs/packages.
 
