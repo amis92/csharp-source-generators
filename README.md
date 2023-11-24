@@ -121,7 +121,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Immutype](https://github.com/DevTeam/Immutype) - ![stars](https://img.shields.io/github/stars/DevTeam/Immutype?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/DevTeam/Immutype?style=flat-square&cacheSeconds=86400) - generates extension methods to support immutability.
 - [Visor](https://github.com/leviysoft/Visor) - ![stars](https://img.shields.io/github/stars/leviysoft/Visor?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/leviysoft/Visor?style=flat-square&cacheSeconds=86400) C# optics library with incremental code generator (maintained fork of [suspended Tinkoff project](https://github.com/Tinkoff/Visor))
 
-#### Disriminated Unions
+#### Discriminated Unions
 
 - [AnyOf](https://github.com/StefH/AnyOf) - ![stars](https://img.shields.io/github/stars/StefH/AnyOf?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/StefH/AnyOf?style=flat-square&cacheSeconds=86400) The Source Generator creates a `AnyOf<First, TSecond, ...>` type to handle multiple defined types as input parameters for methods.
 - [dotVariant](https://github.com/mknejp/dotvariant) - ![stars](https://img.shields.io/github/stars/mknejp/dotvariant?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/mknejp/dotvariant?style=flat-square&cacheSeconds=86400) A type-safe and space-efficient sum type for C# (comparable to discriminated unions in C or C++).
