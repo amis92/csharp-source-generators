@@ -37,7 +37,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Functional Programming](#functional-programming)
   - [Value semantic / New Type Idiom](#value-semantic--new-type-idiom)
   - [Immutability](#immutability)
-  - [Disriminated Unions](#disriminated-unions)
+  - [Discriminated Unions](#discriminated-unions)
 - [Serialization](#serialization)
   - [Json](#json)
 - [Localization](#localization)
