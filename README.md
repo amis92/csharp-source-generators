@@ -28,7 +28,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 
 
-<details>
+<details open>
  <summary>Categories</summary>
 
 - [Dependency Injection (IoC Container)](#dependency-injection-ioc-container)
