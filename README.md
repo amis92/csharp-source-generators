@@ -1,4 +1,5 @@
 # C# Source Generators
+
   * [Documentation and samples](#documentation-and-samples)
   * [Source Generators](#source-generators)
   * [Meta - libs and generators for other generators](#meta---libs-and-generators-for-other-generators)
@@ -7,13 +8,14 @@
   * [Videos](#videos)
   * [Demo, PoC and excercise projects](#demo-poc-and-excercise-projects)
   * [Projects using custom Source Generators "internally"](#projects-using-custom-source-generators-internally)
+
 ---
+
 A list of C# Source Generators (not necessarily awesome), because I haven't found a good list yet.
 
 **C# Source Generators** is a Roslyn compiler feature introduced in C#9/.NET 5. It lets C# developers inspect user code and generate new C# source files that can be added to a compilation.
 
 Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sourcegenerator) to your generator repo - let's get it started!
-
 
 ## Documentation and samples
 
@@ -25,8 +27,6 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [davidwengier/SourceGeneratorTemplate](https://github.com/davidwengier/SourceGeneratorTemplate) -![stars](https://img.shields.io/github/stars/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=86400) A basic template for writing a C# source generator, from the Roslyn dev.
 
 ## Source Generators
-
-
 
 <details open>
  <summary>Categories</summary>
@@ -71,7 +71,6 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
   Sorted alphabetically in each category. Template for entries:
 - [REPO](https://github.com/REPO) - ![stars](https://img.shields.io/github/stars/REPO?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/REPO?style=flat-square&cacheSeconds=86400)
 -->
-
 
 ### Dependency Injection (IoC Container)
 
@@ -236,7 +235,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 - [AltaSoft.DomainPrimitives](https://github.com/altasoft/DomainPrimitives) - ![stars](https://img.shields.io/github/stars/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=86400) - A C# toolkit purposefully designed to accelerate the development of domain-specific primitives within your applications. This streamlined solution empowers developers to efficiently encapsulate fundamental domain logic. Through this toolkit, you'll significantly reduce code complexity while improving the maintainability of your project.
 - [Architect.DomainModeling](https://github.com/TheArchitectDev/Architect.DomainModeling) - ![stars](https://img.shields.io/github/stars/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=86400) A complete Domain-Driven Design (DDD) toolset for implementing domain models, including base types and source generators for ValueObjects, WrapperValueObjects, Entities, and Identities.
-- 
+
 ### Metaprogramming
 
 - [GenerateHelperLibraries](https://github.com/musictopia2/GenerateHelperLibraries) - ![stars](https://img.shields.io/github/stars/musictopia2/GenerateHelperLibraries?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/GenerateHelperLibraries?style=flat-square&cacheSeconds=86400)  A source generator where you can send any code to the client without having to do as a string.  Helper for custom classes a client has to override in order to have additional features for source generators.  Intended to be used from another source generator.
