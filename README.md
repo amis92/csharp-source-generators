@@ -339,7 +339,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [TupleOverloadGenerator](https://github.com/ProphetLamb/TupleOverloadGenerator) - ![stars](https://img.shields.io/github/stars/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=86400) - Overload `params` array parameter with tuples avoiding heap allocations.
 - [ValueLink](https://github.com/archi-Doc/ValueLink) -![stars](https://img.shields.io/github/stars/archi-Doc/ValueLink?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/ValueLink?style=flat-square&cacheSeconds=86400) A C# Library for creating and managing multiple links between objects.
 - [AutomaticInterface]([[https://github.com/beakona/AutoInterface](https://github.com/codecentric/net_automatic_interface)](https://github.com/codecentric/net_automatic_interface)) -![stars](https://img.shields.io/github/stars/codecentric/net_automatic_interface?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/codecentric/net_automatic_interface?style=flat-square&cacheSeconds=86400) Generate an Interface from a class.
-- 
+  
 ## Meta - libs and generators for other generators
 
 <!--
