@@ -339,7 +339,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [ToString](https://github.com/Burgyn/MMLib.ToString) -![stars](https://img.shields.io/github/stars/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Burgyn/MMLib.ToString?style=flat-square&cacheSeconds=86400) - C# source generator for implementing `ToString` override like `record` type.
 - [TupleOverloadGenerator](https://github.com/ProphetLamb/TupleOverloadGenerator) - ![stars](https://img.shields.io/github/stars/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/ProphetLamb/TupleOverloadGenerator?style=flat-square&cacheSeconds=86400) - Overload `params` array parameter with tuples avoiding heap allocations.
 - [ValueLink](https://github.com/archi-Doc/ValueLink) -![stars](https://img.shields.io/github/stars/archi-Doc/ValueLink?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/archi-Doc/ValueLink?style=flat-square&cacheSeconds=86400) A C# Library for creating and managing multiple links between objects.
-  
+
 ## Meta - libs and generators for other generators
 
 <!--
