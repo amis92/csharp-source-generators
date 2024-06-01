@@ -202,6 +202,8 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 ### Patterns
 
 - [Lombok.NET](https://github.com/CollinAlpert/Lombok.NET) - ![stars](https://img.shields.io/github/stars/CollinAlpert/Lombok.NET?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/CollinAlpert/Lombok.NET?style=flat-square&cacheSeconds=86400) Generates boilerplate code and common code patterns. As the name suggests, it is the .NET version of Java's Lombok.
+- [Minerals.AutoMixins](https://github.com/SzymonHalucha/Minerals.AutoMixins) - ![stars](https://img.shields.io/github/stars/SzymonHalucha/Minerals.AutoMixins?style=flat-square&cacheSeconds=86400) ![last commit](https://img.shields.io/github/last-commit/SzymonHalucha/Minerals.AutoMixins?style=flat-square&cacheSeconds=86400) Package for automatic mixin design pattern generation using an incremental source generator.
+- [Minerals.AutoCQRS](https://github.com/SzymonHalucha/Minerals.AutoCQRS) - ![stars](https://img.shields.io/github/stars/SzymonHalucha/Minerals.AutoCQRS?style=flat-square&cacheSeconds=86400) ![last commit](https://img.shields.io/github/last-commit/SzymonHalucha/Minerals.AutoCQRS?style=flat-square&cacheSeconds=86400) NuGet package that provides interfaces for implementing the CQRS pattern (Commands, Queries, and Pipelines) along with automatic dependency injection and no MediatR package overhead.
 
 #### Mediator
 
@@ -232,11 +234,13 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 #### Adapter
 
 - [AutoInterface](https://github.com/beakona/AutoInterface) -![stars](https://img.shields.io/github/stars/beakona/AutoInterface?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/beakona/AutoInterface?style=flat-square&cacheSeconds=86400) interface-to-member source generator.
+- [Minerals.AutoInterfaces](https://github.com/SzymonHalucha/Minerals.AutoInterfaces) - ![stars](https://img.shields.io/github/stars/SzymonHalucha/Minerals.AutoInterfaces?style=flat-square&cacheSeconds=86400) ![last commit](https://img.shields.io/github/last-commit/SzymonHalucha/Minerals.AutoInterfaces?style=flat-square&cacheSeconds=86400) Package for automatic interface generation using an incremental source generator.
 
 ### Domain Driven Design (DDD)
 
 - [AltaSoft.DomainPrimitives](https://github.com/altasoft/DomainPrimitives) - ![stars](https://img.shields.io/github/stars/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=86400) - A C# toolkit purposefully designed to accelerate the development of domain-specific primitives within your applications. This streamlined solution empowers developers to efficiently encapsulate fundamental domain logic. Through this toolkit, you'll significantly reduce code complexity while improving the maintainability of your project.
 - [Architect.DomainModeling](https://github.com/TheArchitectDev/Architect.DomainModeling) - ![stars](https://img.shields.io/github/stars/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/TheArchitectDev/Architect.DomainModeling?style=flat-square&cacheSeconds=86400) A complete Domain-Driven Design (DDD) toolset for implementing domain models, including base types and source generators for ValueObjects, WrapperValueObjects, Entities, and Identities.
+- [Minerals.AutoDomain](https://github.com/SzymonHalucha/Minerals.AutoDomain) - ![stars](https://img.shields.io/github/stars/SzymonHalucha/Minerals.AutoDomain?style=flat-square&cacheSeconds=86400) ![last commit](https://img.shields.io/github/last-commit/SzymonHalucha/Minerals.AutoDomain?style=flat-square&cacheSeconds=86400) This package provides a fast method of defining domain layer components with their specific implementation, such as aggregates, entities and domain events. Package has built-in strongly typed IDs.
 
 ### Metaprogramming
 
