@@ -306,6 +306,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 - [Transplator](https://github.com/atifaziz/Transplator) - ![stars](https://img.shields.io/github/stars/atifaziz/Transplator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/atifaziz/Transplator?style=flat-square&cacheSeconds=86400) A simple C# source generator for text templates.
 - [Weave](https://github.com/otac0n/Weave) - ![stars](https://img.shields.io/github/stars/otac0n/Weave?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/otac0n/Weave?style=flat-square&cacheSeconds=86400) Weave is a text templating engine for .NET that is all about attention to detail. Weave handles the tricky work of making your rendered text beautiful.
+- [TemplatePropertyGenerator](https://github.com/JKamsker/JKToolKit.TemplatePropertyGenerator) - ![stars](https://img.shields.io/github/stars/JKamsker/JKToolKit.TemplatePropertyGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/JKamsker/JKToolKit.TemplatePropertyGenerator?style=flat-square&cacheSeconds=86400) Generates strongly typed stringformatters based on Stringformats
 
 ### Other
 
