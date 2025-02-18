@@ -43,6 +43,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
   - [Discriminated Unions](#discriminated-unions)
 - [Serialization](#serialization)
   - [Json](#json)
+- [Validation](#validation)
 - [Localization](#localization)
 - [Testing](#testing)
   - [Mocking](#mocking)
@@ -175,9 +176,12 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [JsonByExampleGenerator](https://github.com/hermanussen/JsonByExampleGenerator) -![stars](https://img.shields.io/github/stars/hermanussen/JsonByExampleGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/hermanussen/JsonByExampleGenerator?style=flat-square&cacheSeconds=86400) - generate classes based on example json files in your project.
 - [JsonDeserializeResourceSourceGenerator](https://github.com/musictopia2/JsonDeserializeResourceSourceGenerator) - ![stars](https://img.shields.io/github/stars/musictopia2/JsonDeserializeResourceSourceGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/JsonDeserializeResourceSourceGenerator?style=flat-square&cacheSeconds=86400)  Instead of having to do embedded resource, can instead have json as additional file and it will produce a c# string and will deserialize to a type specified.
 - [JsonPolymorphicGenerator](https://github.com/surgicalcoder/JsonPolymorphicGenerator) - ![stars](https://img.shields.io/github/stars/surgicalcoder/JsonPolymorphicGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/surgicalcoder/JsonPolymorphicGenerator?style=flat-square&cacheSeconds=86400) - Source Code Generator for System.Text.Json JsonDerivedType attributes on polymorphic classes
-- [JsonSerializerContextGenerator](https://github.com/musictopia2/JsonSerializerContextGenerator) - ![stars](https://img.shields.io/github/stars/musictopia2/JsonSerializerContextGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/JsonSerializerContextGenerator?style=flat-square&cacheSeconds=86400)  A source generator that produces nearly the same code ahs system.json.text but easier to use because you only have to put an attribute for a model class you want to produce for.  Also, produces a method to register to make it easy to use that source generator when serializing/deserializing json.
+- [JsonSerializerContextGenerator](https://github.com/musictopia2/JsonSerializerContextGenerator) - ![stars](https://img.shields.io/github/stars/musictopia2/JsonSerializerContextGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/musictopia2/JsonSerializerContextGenerator?style=flat-square&cacheSeconds=86400)  A source generator that produces nearly the same code as system.json.text but easier to use because you only have to put an attribute for a model class you want to produce for.  Also, produces a method to register to make it easy to use that source generator when serializing/deserializing json.
 - [JsonSrcGen](https://github.com/trampster/JsonSrcGen) -![stars](https://img.shields.io/github/stars/trampster/JsonSrcGen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/trampster/JsonSrcGen?style=flat-square&cacheSeconds=86400) - compile time JSON serializer generation.
 - [TeuJson](https://github.com/Terria-K/TeuJson) - ![stars](https://img.shields.io/github/stars/Terria-K/TeuJson?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Terria-K/TeuJson?style=flat-square&cacheSeconds=86400) A Reflection-less and Lightweight Json Library using source generator.
+
+### Validation
+- [Validly](https://github.com/Hookyns/validly) -![stars](https://img.shields.io/github/stars/Hookyns/validly?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Hookyns/validly?style=flat-square&cacheSeconds=86400) - A performant, zero-allocation, and highly customizable validation library that generates validation logic based on attributes, with usage similar to DataAnnotations.
 
 ### Localization
 
