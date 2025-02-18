@@ -240,6 +240,9 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 - [AutoInterface](https://github.com/beakona/AutoInterface) -![stars](https://img.shields.io/github/stars/beakona/AutoInterface?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/beakona/AutoInterface?style=flat-square&cacheSeconds=86400) interface-to-member source generator.
 
+#### Fluent API
+- [SuperFluid](https://github.com/hughesjs/SuperFluid) - ![stars](https://img.shields.io/github/stars/hughesjs/SuperFluid?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/hughesjs/SuperFluid?style=flat-square&cacheSeconds=86400) Generates the interfaces to represent a fluent API with grammar
+
 ### Domain Driven Design (DDD)
 
 - [AltaSoft.DomainPrimitives](https://github.com/altasoft/DomainPrimitives) - ![stars](https://img.shields.io/github/stars/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/altasoft/DomainPrimitives?style=flat-square&cacheSeconds=86400) - A C# toolkit purposefully designed to accelerate the development of domain-specific primitives within your applications. This streamlined solution empowers developers to efficiently encapsulate fundamental domain logic. Through this toolkit, you'll significantly reduce code complexity while improving the maintainability of your project.
