@@ -203,6 +203,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 ### Patterns
 
 - [Lombok.NET](https://github.com/CollinAlpert/Lombok.NET) - ![stars](https://img.shields.io/github/stars/CollinAlpert/Lombok.NET?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/CollinAlpert/Lombok.NET?style=flat-square&cacheSeconds=86400) Generates boilerplate code and common code patterns. As the name suggests, it is the .NET version of Java's Lombok.
+- [ActorSrcGen](https://github.com/aabs/ActorSrcGen) - ![stars](https://img.shields.io/github/stars/aabs/ActorSrcGen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/aabs/ActorSrcGen?style=flat-square&cacheSeconds=86400) Generates boilerplate to turn simple C# classes into TPL Dataflow compatible pipelines with robust and performant asynchronous and concurrent code.
 
 #### Mediator
 
