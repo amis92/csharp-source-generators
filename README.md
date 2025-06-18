@@ -109,6 +109,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [NextGenMapper](https://github.com/DedAnton/NextGenMapper) - ![stars](https://img.shields.io/github/stars/DedAnton/NextGenMapper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/DedAnton/NextGenMapper?style=flat-square&cacheSeconds=86400) Easy-to-use mapper without configuration.
 - [SourceMapper](https://github.com/alekshura/SourceMapper) - ![stars](http://img.shields.io/github/stars/alekshura/SourceMapper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/alekshura/SourceMapper?style=flat-square&cacheSeconds=86400) - generates Mappers code based on attributes used on interfaces or abstract classes. It is inspired by Java [MapStruct](https://mapstruct.org/)
 - [SourceMapper](https://github.com/paiden/SourceMapper/) -![stars](https://img.shields.io/github/stars/paiden/SourceMapper?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/paiden/SourceMapper?style=flat-square&cacheSeconds=86400) A source generator that creates extension methods for cloning and mapping.
+- [Facet](https://github.com/Tim-Maes/Facet/) -![stars](https://img.shields.io/github/stars/Tim-Maes/Facet?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Tim-Maes/Facet?style=flat-square&cacheSeconds=86400) A source generator that instantly scaffolds DTOs, ViewModels and typed LINQ projections.
 
 ### Communication
 
