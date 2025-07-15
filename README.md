@@ -148,7 +148,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 - [Vogen](https://github.com/SteveDunn/Vogen) - ![stars](https://img.shields.io/github/stars/SteveDunn/Vogen?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/SteveDunn/Vogen?style=flat-square&cacheSeconds=86400) C# source generator and code analyser that generates strongly typed domain identities.
 - [WrapperValueObject](https://github.com/martinothamar/WrapperValueObject) - ![stars](https://img.shields.io/github/stars/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/martinothamar/WrapperValueObject?style=flat-square&cacheSeconds=86400) - for creating simple value objects wrapping primitive types.
 - [StronglyTypedId](https://github.com/andrewlock/StronglyTypedId) - ![stars](https://img.shields.io/github/stars/andrewlock/StronglyTypedId?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/andrewlock/StronglyTypedId?style=flat-square&cacheSeconds=86400) A Rosyln-powered generator for strongly-typed IDs
-
+- [ComparisonOperatorsGenerator](https://github.com/sonnemaf/ReflectionIT.ComparisonOperatorsGenerator) - ![stars](https://img.shields.io/github/stars/sonnemaf/ReflectionIT.ComparisonOperatorsGenerator?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/sonnemaf/ReflectionIT.ComparisonOperatorsGenerator?style=flat-square&cacheSeconds=86400) A Rosyln-powered generator for strongly-typed IDs
 
 #### Immutability
 
