@@ -189,6 +189,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 
 ### Validation
 - [Validly](https://github.com/Hookyns/validly) -![stars](https://img.shields.io/github/stars/Hookyns/validly?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Hookyns/validly?style=flat-square&cacheSeconds=86400) - A performant, zero-allocation, and highly customizable validation library that generates validation logic based on attributes, with usage similar to DataAnnotations.
+- [EasyValidate](https://easy-validate.netlify.app) -![stars](https://img.shields.io/github/stars/mu-dawood/EasyValidate?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/mu-dawood/EasyValidate?style=flat-square&cacheSeconds=86400) - High-performance, type-safe .NET source generator that uses attributes to automatically generate validation for properties, fields, and method parameters. Easy Validate supports async validation, integrates with dependency injection, and includes rich analyzers and code fixers for a seamless developer experience.
 
 ### Localization
 
