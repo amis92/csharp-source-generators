@@ -248,7 +248,7 @@ Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sou
 #### Visitor
 
 - [MrMeeseeks.Visitor](https://github.com/Yeah69/MrMeeseeks.Visitor) - ![stars](https://img.shields.io/github/stars/Yeah69/MrMeeseeks.Visitor?style=flat-square&cacheSeconds=604800) ![last commit](https://img.shields.io/github/last-commit/Yeah69/MrMeeseeks.Visitor?style=flat-square&cacheSeconds=86400) Generates the boilerplate code for applications of the Visitor pattern.
-- [Visitor.NET](https://github.com/Stepami/visitor-net) ![stars](https://img.shields.io/github/stars/Stepami/visitor-net?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/Stepami/visitor-net?style=flat-square) First-ever acyclic generic extensible typesafe implementation of Visitor pattern for .NET without any usage of dynamic cast. Implementation powered by Source Generators
+- [Visitor.NET](https://github.com/Stepami/visitor-net) - ![stars](https://img.shields.io/github/stars/Stepami/visitor-net?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/Stepami/visitor-net?style=flat-square) First-ever acyclic generic extensible typesafe implementation of Visitor pattern for .NET without any usage of dynamic cast. Implementation powered by Source Generators
 
 #### Adapter
 
