@@ -1,0 +1,1036 @@
+header:
+  title: C# Source Generators
+table_of_contents:
+- name: Documentation and samples
+  anchor: documentation-and-samples
+- name: Source Generators
+  anchor: source-generators
+- name: Meta - libs and generators for other generators
+  anchor: meta---libs-and-generators-for-other-generators
+- name: Tips & Tricks
+  anchor: tips--tricks
+- name: Articles
+  anchor: articles
+- name: Videos
+  anchor: videos
+- name: Demo, PoC and excercise projects
+  anchor: demo-poc-and-excercise-projects
+- name: Projects using custom Source Generators "internally"
+  anchor: projects-using-custom-source-generators-internally
+introduction:
+- A list of C# Source Generators (not necessarily awesome), because I haven't found a good list yet.
+- ''
+- '**C# Source Generators** is a Roslyn compiler feature introduced in C#9/.NET 5. It lets C# developers inspect user code
+  and generate new C# source files that can be added to a compilation.'
+- ''
+- Add GitHub topic [`csharp-sourcegenerator`](https://github.com/topics/csharp-sourcegenerator) to your generator repo - let's
+  get it started!
+documentation:
+- '[docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview) official documentation.'
+- '[dotnet/roslyn feature design document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
+  describing the compiler feature.'
+- '[dotnet/roslyn cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md) to help
+  with generator creation.'
+- '[dotnet/roslyn-sdk samples](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators) show how to
+  implement a source generator and use features like external package references (*inside* generators). Includes AutoNotify,
+  Csv, Maths, Mustache, and SettingsXml.'
+- '[SourceGeneratorPlayground](https://wengier.com/SourceGeneratorPlayground) - an online Source Generator Playground to play
+  with generator ideas 💡 without any setup noise. [Source repo](https://github.com/davidwengier/SourceGeneratorPlayground).'
+- '[davidwengier/SourceGeneratorTemplate](https://github.com/davidwengier/SourceGeneratorTemplate) -![stars](https://img.shields.io/github/stars/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=604800)
+  ![last commit](https://img.shields.io/github/last-commit/davidwengier/SourceGeneratorTemplate?style=flat-square&cacheSeconds=86400)
+  A basic template for writing a C# source generator, from the Roslyn dev.'
+categories:
+  dependency-injection-ioc-container:
+    name: Dependency Injection (IoC Container)
+    repositories:
+    - name: AutoCtor
+      url: https://github.com/distantcam/AutoCtor
+      description: AutoCtor is a Roslyn Source Generator that will automatically create a constructor for your class for use
+        with constructor Dependency Injection.
+    - name: AutoRegisterInject
+      url: https://github.com/patrickklaeren/AutoRegisterInject
+      description: Automatically generate Microsoft Dependency Injection ServiceCollection registrations for your classes
+        from attributes.
+    - name: CircleDI
+      url: https://github.com/BlackWhiteYoshi/CircleDI
+      description: The world only full-power circular Service Provider. It can resolve circular dependencies, has compile
+        time safety and optimal performance.
+    - name: DependencyInjection.SourceGenerators
+      url: https://github.com/jimmy-mll/DependencyInjection.SourceGenerators
+      description: This project is a C# source generator designed to simplify and automate the registration of dependencies
+        in Microsoft's Dependency Injection service collection. By using this package, developers can enhance the clarity
+        and efficiency of their code by reducing the need for manual service registration.
+    - name: DependencyManagement
+      url: https://github.com/essy-ecosystem/dependency-management
+      description: The Dependency Management is a very fast dependency injection and components container, with many interesting
+        features, and without reflection.
+    - name: GrpcInjection
+      url: https://github.com/juniorporfirio/grpcinjection
+      description: GrpcInjection is a tool  that allow you to inject Services and Interceptor in time of compilation inside
+        of GRPC Projects using C# source generator.
+    - name: Injectio
+      url: https://github.com/loresoft/Injectio
+      description: Source generator that helps register discovered services in the dependency injection container
+    - name: Jab
+      url: https://github.com/pakrym/jab
+      description: Compile Time Dependency Injection
+    - name: lambdajection
+      url: https://github.com/cythral/lambdajection
+      description: Framework for building AWS Lambdas using dependency injection and aspect-oriented programming.
+    - name: MrMeeseeks.DIE
+      url: https://github.com/Yeah69/MrMeeseeks.DIE
+      description: An unambigous, convenient, flexible and feature rich compile time dependency injection container.
+    - name: Pure.DI
+      url: https://github.com/DevTeam/Pure.DI
+      description: dependency injection for .NET without any IoC/DI containers, frameworks, dependencies, and thus without
+        any performance impact and side-effects.
+    - name: ServiceScan.SourceGenerator
+      url: https://github.com/Dreamescaper/ServiceScan.SourceGenerator
+      description: Type scanning source generator for `Microsoft.Extensions.DependencyInjection` services registrations inspired
+        by [Scrutor](https://github.com/khellang/Scrutor/).
+    - name: SourceDepend
+      url: https://github.com/crwsolutions/sourcedepend
+      description: Simply tag members with a `[Dependency]` attribute and those will be added to the constructor, saving you
+        from manual coding the constructor.
+    - name: SourceInject
+      url: https://github.com/giggio/sourceinject/
+      description: A source generator that allow you to generate your services for dependencies injection during compile time.
+    - name: StrongInject
+      url: https://github.com/YairHalberstadt/stronginject
+      description: compile time dependency injection for .NET.
+    - name: Thunderboltloc
+      url: https://github.com/AlyElhaddad/ThunderboltIoc
+      description: One of the very first IoC frameworks for .Net that has no reflection.
+  console--cli:
+    name: Console / CLI
+    repositories:
+    - name: AutoSpectre
+      url: https://github.com/jeppevammenkristensen/auto-spectre
+      description: Generates a service for prompting and populating a class using the Spectre.Console library
+    - name: ConsoleAppFramework
+      url: https://github.com/Cysharp/ConsoleAppFramework
+      description: Zero Dependency, Zero Overhead, Zero Reflection, Zero Allocation, AOT Safe CLI Framework powered by C#
+        Source Generator.
+    - name: docopt.net
+      url: https://github.com/docopt/docopt.net
+      description: generates C# source code that parses command-line arguments into a strong-typed arguments class (also generated),
+        given _just_ the [POSIX-style usage in plain text](http://docopt.org/) as part of the CLI. In other words, write the
+        help message for your program and get the entire parser generated for free!
+    - name: Figgle
+      url: https://github.com/drewnoakes/figgle
+      description: Generate ASCII banner text at compile time (or run time) using figlet fonts.
+  mappers:
+    name: Mappers
+    repositories:
+    - name: AutoDto
+      url: https://github.com/Ohorodnikov/AutoDto
+      description: A source generator that generates DTO models from BL to avoid same BL and DTO models
+    - name: Facet
+      url: https://github.com/Tim-Maes/Facet/
+      description: A source generator that instantly scaffolds DTOs, ViewModels and typed LINQ projections.
+    - name: Flattening
+      url: https://github.com/Kros-sk/Kros.Generators.Flattening
+      description: C# source generator for generating flattened classes from complex domain classes.
+    - name: GraphQL.Tools
+      url: https://github.com/MoienTajik/GraphQL.Tools
+      description: A GraphQL to C# compiler (code-generator) which turns your GraphQL schema into a set of C# classes, interfaces,
+        and enums.
+    - name: Mapperly
+      url: https://github.com/riok/mapperly
+      description: A source generator for generating object mappings. Inspired by MapStruct.
+    - name: MappingCloningExtensions
+      url: https://github.com/musictopia2/MappingCloningExtensions
+      description: Generates extensions of objects for mapping and cloning using either attributes or fluent style.  Also,
+        supports deep copying and specfiying whether it can do a deep copy and the possibility of doing so safely.
+    - name: Mapster
+      url: https://github.com/MapsterMapper/Mapster
+      description: A fast, fun and performant object to object Mapper. Has better performance and is more memorry efficient
+        than Automapper. Besides code generation, supports also Fluent API.
+    - name: MapTo
+      url: https://github.com/mrtaikandi/MapTo
+      description: A convention based object to object mapper similar to Automapper.
+    - name: NextGenMapper
+      url: https://github.com/DedAnton/NextGenMapper
+      description: Easy-to-use mapper without configuration.
+    - name: SourceMapper
+      url: https://github.com/alekshura/SourceMapper
+      description: generates Mappers code based on attributes used on interfaces or abstract classes. It is inspired by Java
+        [MapStruct](https://mapstruct.org/)
+    - name: SourceMapper
+      url: https://github.com/paiden/SourceMapper/
+      description: A source generator that creates extension methods for cloning and mapping.
+  communication:
+    name: Communication
+    repositories:
+    - name: CoreWCF
+      url: https://github.com/CoreWCF/CoreWCF
+      description: CoreWCF provides support of WCF server side code on .NET Core / .NET6. CoreWCF allows users to inject services
+        into `OperationContract` implementation using a source generator to provide an `OperationContract` implementation
+        that fits the expected `ServiceContract`. The supplied implementation fetch services from the DI container the same
+        way the `[FromServices]` attribute works in ASP.NET core MVC Controllers. The source generator supports both a dedicated
+        `[Injected]` attribute and the ASP.NET Core MVC `[FromServices]` attribute.
+    - name: Imp.NET
+      url: https://github.com/DouglasDwyer/Imp.NET
+      description: a fast, high-level, object-oriented C# networking library that supports the invocation of remote methods
+        through proxy interface objects.
+    - name: IoTHubClientGenerator
+      url: https://github.com/alonf/IoTHubClientGenerator
+      description: Build a C# Azure IoT Device client program in seconds!
+  graphics--drawing:
+    name: Graphics / Drawing
+    repositories:
+    - name: ComputeSharp
+      url: https://github.com/Sergio0694/ComputeSharp
+      description: A .NET library to run C# code in parallel on the GPU through DX12 and dynamically generated HLSL compute
+        shaders, which are transpiled from C# and precompiled at build-time using source generators.
+    - name: Svg to C# Source Generators
+      url: https://github.com/wieslawsoltes/Svg.Skia
+      description: SVGC compiles SVG drawing markup to C# using SkiaSharp as rendering engine. SVGC can be also used as codegen
+        for upcoming C# 9 Source Generator feature.
+  enums:
+    name: Enums
+    repositories:
+    - name: BetterEnums
+      url: https://github.com/Ceiridge/BetterEnums
+      description: C# Enums with values and better performance as a source generator
+    - name: Credfeto.Enumeration.Source.Generation
+      url: https://github.com/credfeto/credfeto-enum-source-generation
+      description: Enum to text generator for enums - generates strongly typed enums for all enums in the assembly, and using
+        `EnumText` attribute for third party enums.  Also includes an analyzer to ensure that all enum usages use the `.GetName`
+        extension method rather than `.ToString`.
+    - name: Enum.Source.Generator
+      url: https://github.com/EngRajabi/Enum.Source.Generator
+      description: A C# source generator to create an enumeration (enum) class from an enum type. With this package, you can
+        work on enums very, very fast without using reflection.
+    - name: EnumClass
+      url: https://github.com/ashenBlade/EnumClass
+      description: Generate Kotlin's `enum class` from C# `enum` with additional features like Switch function (instead of
+        `switch` statement). It also contains support libraries like generator for JsonConverter for generated classes
+    - name: EnumerationClassGenerator
+      url: https://github.com/HamedFathi/EnumerationClassGenerator
+      description: A C# source generator to create an enumeration class from an enum type.
+    - name: EnumFastToStringDotNet
+      url: https://github.com/Spinnernicholas/EnumFastToStringDotNet
+      description: Automatically generates enum extension methods that implement a switch expression based ToString method.
+    - name: EnumUtilitiesGenerator
+      url: https://github.com/leoformaggi/enum-utilities-generator
+      description: A source generator to generate compile-time mapping of enums and description attributes.
+    - name: FastEnumGenerator
+      url: https://github.com/musictopia2/FastEnumGenerator
+      description: An enum like generator where you create a partial class with private enum and it will generate an enum
+        like record struct even including returning the words and a list.
+    - name: JOS.Enumeration
+      url: https://github.com/joseftw/jos.enumeration
+      description: Enumeration class powered by source generation
+    - name: NetEscapades.EnumGenerators
+      url: https://github.com/andrewlock/NetEscapades.EnumGenerators
+      description: A source generator for generating fast "reflection" methods for enums
+    - name: RapidEnum
+      url: https://github.com/hanachiru/RapidEnum
+      description: RapidEnum is a Source Generator that provides fast-running enum utilities for C#/.NET. It is faster than
+        the .NET API and achieves zero allocation for all methods.
+  functional-programming:
+    name: Functional Programming
+    repositories: []
+    subcategories:
+      value-semantic--new-type-idiom:
+        name: Value semantic / New Type Idiom
+        repositories:
+        - name: ComparisonOperatorsGenerator
+          url: https://github.com/sonnemaf/ReflectionIT.ComparisonOperatorsGenerator
+          description: A Source Generator package that generates the `>`, `>=`, `<`, `<=` operators for a `partial` type (`class`,
+            `struct` or `record`) which implements `IComparable<T>`.
+        - name: Generator.Equals
+          url: https://github.com/diegofrata/Generator.Equals
+          description: generates equality and hashing for classes and records, supports a number of strategies for comparing
+            collections and properties.
+        - name: RSCG_UtilityTypes
+          url: https://github.com/ignatandrei/RSCG_UtilityTypes
+          description: Add Omit and Pick attributes to generate classes from existing class, like in TypeScript.
+        - name: Strongly
+          url: https://github.com/lucasteles/Strongly
+          description: Easily generate serializable domain value types
+        - name: StronglyTypedId
+          url: https://github.com/andrewlock/StronglyTypedId
+          description: A Rosyln-powered generator for strongly-typed IDs
+        - name: ValueObjectGenerator
+          url: https://github.com/RyotaMurohoshi/ValueObjectGenerator
+          description: C# source generator is for ValueObjects (ie.Wrapper classes).
+        - name: Vogen
+          url: https://github.com/SteveDunn/Vogen
+          description: C# source generator and code analyser that generates strongly typed domain identities.
+        - name: WrapperValueObject
+          url: https://github.com/martinothamar/WrapperValueObject
+          description: for creating simple value objects wrapping primitive types.
+      immutability:
+        name: Immutability
+        repositories:
+        - name: Immutype
+          url: https://github.com/DevTeam/Immutype
+          description: generates extension methods to support immutability.
+        - name: Visor
+          url: https://github.com/leviysoft/Visor
+          description: C# optics library with incremental code generator (maintained fork of [suspended Tinkoff project](https://github.com/Tinkoff/Visor))
+      discriminated-unions:
+        name: Discriminated Unions
+        repositories:
+        - name: AnyOf
+          url: https://github.com/StefH/AnyOf
+          description: The Source Generator creates a `AnyOf<First, TSecond, ...>` type to handle multiple defined types as
+            input parameters for methods.
+        - name: dotVariant
+          url: https://github.com/mknejp/dotvariant
+          description: A type-safe and space-efficient sum type for C# (comparable to discriminated unions in C or C++).
+        - name: Dunet
+          url: https://github.com/domn1995/dunet
+          description: A simple source generator for [discriminated unions](https://en.wikipedia.org/wiki/Tagged_union) in
+            C#.
+        - name: Funcky Discriminated Unions
+          url: https://github.com/polyadic/funcky-discriminated-union
+          description: A source generator that generates `Match` methods for all your discriminated unions needs. ✨ Can be
+            used with or without the functional programming library Funcky.
+        - name: N.SourceGenerators.UnionTypes
+          url: https://github.com/Ne4to/N.SourceGenerators.UnionTypes
+          description: Discriminated union type source generator.
+        - name: Unions
+          url: https://github.com/PaulBraetz/Unions
+          description: for generating meaningful, efficient union types.
+  serialization:
+    name: Serialization
+    repositories:
+    - name: AutoDeconstructable
+      url: https://github.com/nemesissoft/Nemesis.TextParsers/tree/master/Nemesis.TextParsers.CodeGen/Deconstructable
+      description: Generator for efficient and automatic flat text serializer/deserializer using [Deconstructable aspect](https://github.com/nemesissoft/Nemesis.TextParsers/blob/master/Specification.md#deconstructables)
+        in [NTP](https://github.com/nemesissoft/Nemesis.TextParsers) library.
+    - name: Azura
+      url: https://github.com/Lucina/Azura
+      description: Generates binary [de]serializers on Streams at design time.
+    - name: Csv-CSharp
+      url: https://github.com/nuskey8/Csv-CSharp
+      description: Csv-CSharp is a highly performant CSV (TSV) parser for .NET and Unity. It is designed to parse UTF-8 binaries
+        directly and leverage Source Generators to enable serialization/deserialization between CSV (TSV) and object arrays
+        with zero (or very low) allocation.
+    - name: CSV-Parser-Generator
+      url: https://github.com/LokiMidgard/CSV-Parser-Generator
+      description: A Parser for CSV with support for uncommon line separators (e.g. Unicode) and instantiation of read-only
+        objects and working nullable handling.
+    - name: GenPack
+      url: https://github.com/dimohy/GenPack
+      description: is a library that uses the .NET source generator to automatically generate packets as classes once you
+        define a schema for the packets. It's easy to use and the results are useful.
+    - name: MemoryPack
+      url: https://github.com/Cysharp/MemoryPack
+      description: Zero encoding extreme performance binary serializer for C# and Unity.
+    - name: MessagePack for C#
+      url: https://github.com/MessagePack-CSharp/MessagePack-CSharp
+      description: Extremely Fast MessagePack Serializer for C#(.NET, .NET Core, Unity, Xamarin). / msgpack.org[C#]
+    - name: ProtobufSourceGenerator
+      url: https://github.com/ladeak/ProtobufSourceGenerator
+      description: A source generator that generates partial helper classes where member properties are attributed with ProtoMember
+        attribute.
+    - name: protobuf-net
+      url: https://github.com/protobuf-net/protobuf-net
+      description: protobuf-net is a contract based serializer for .NET code, that happens to write data in the "protocol
+        buffers" serialization format engineered by Google.
+    - name: SerdeDn (serde-sn)
+      url: https://github.com/agocke/serde-dn
+      description: is a port of the popular [serde.rs](https://serde.rs/) Rust serialization/deserialization library to .NET.
+        Basic cases are fully automated using a C# source generator.
+    - name: SpreadCheetah
+      url: https://github.com/sveinungf/spreadcheetah
+      description: Create Excel files with a C# Source Generator for generating the rows.
+    - name: StackXML
+      url: https://github.com/ZingBallyhoo/StackXML
+      description: Stack based zero-allocation XML serializer and deserializer.
+    - name: StructPacker
+      url: https://github.com/RudolfKurka/StructPacker
+      description: binary serializer that auto-generates C# serialization code to achieve peak runtime performance and efficiency.
+    - name: Tinyhand
+      url: https://github.com/archi-Doc/Tinyhand
+      description: Tiny and simple data format/serializer using a source generator.
+    - name: VYaml
+      url: https://github.com/hadashiA/VYaml
+      description: VYaml is a pure C# YAML 1.2 implementation, which is extra fast, low memory footprint with focued on .NET
+        and Unity.
+    subcategories:
+      json:
+        name: Json
+        repositories:
+        - name: GeneratedJsonConverters
+          url: https://github.com/aviationexam/json-converter-source-generator
+          description: generate json converters for polymorph contracts and string based enum serialization.
+        - name: JsonByExampleGenerator
+          url: https://github.com/hermanussen/JsonByExampleGenerator
+          description: generate classes based on example json files in your project.
+        - name: JsonDeserializeResourceSourceGenerator
+          url: https://github.com/musictopia2/JsonDeserializeResourceSourceGenerator
+          description: Instead of having to do embedded resource, can instead have json as additional file and it will produce
+            a c# string and will deserialize to a type specified.
+        - name: JsonPolymorphicGenerator
+          url: https://github.com/surgicalcoder/JsonPolymorphicGenerator
+          description: Source Code Generator for System.Text.Json JsonDerivedType attributes on polymorphic classes
+        - name: JsonSerializerContextGenerator
+          url: https://github.com/musictopia2/JsonSerializerContextGenerator
+          description: A source generator that produces nearly the same code as system.json.text but easier to use because
+            you only have to put an attribute for a model class you want to produce for.  Also, produces a method to register
+            to make it easy to use that source generator when serializing/deserializing json.
+        - name: JsonSrcGen
+          url: https://github.com/trampster/JsonSrcGen
+          description: compile time JSON serializer generation.
+        - name: TeuJson
+          url: https://github.com/Terria-K/TeuJson
+          description: A Reflection-less and Lightweight Json Library using source generator.
+  validation:
+    name: Validation
+    repositories:
+    - name: EasyValidate
+      url: https://github.com/mu-dawood/EasyValidate
+      description: High-performance, type-safe .NET source generator that uses attributes to automatically generate validation
+        for properties, fields, and method parameters. Easy Validate supports async validation, integrates with dependency
+        injection, and includes rich analyzers and code fixers for a seamless developer experience.
+    - name: Validly
+      url: https://github.com/Hookyns/validly
+      description: A performant, zero-allocation, and highly customizable validation library that generates validation logic
+        based on attributes, with usage similar to DataAnnotations.
+  localization:
+    name: Localization
+    repositories:
+    - name: kli.Localize
+      url: https://github.com/kl1mm/localize
+      description: localize strings from json files via  source code generation
+    - name: MrMeeseeks.ResXToViewModelGenerator
+      url: https://github.com/Yeah69/MrMeeseeks.ResXToViewModelGenerator
+      description: Takes ResX files and generates localization ViewModels for a more convenient usage of localization in MVVM
+        projects.
+    - name: ResXGenerator
+      url: https://github.com/ycanardeau/ResXGenerator
+      description: Generates strongly-typed resource classes for looking up localized strings.
+  testing:
+    name: Testing
+    repositories:
+    - name: Buildenator
+      url: https://github.com/progala2/Buildenator
+      description: Generate data builder classes for testing purposes (and not only) for your entities. Autofixture + Moq
+        extensions.
+    - name: FluentAssertions.Eventual
+      url: https://github.com/mazharenko/FluentAssertions.Eventual
+      description: Generates a specialized waiting wrapper for `FluentAssertions` assertions, offering a syntax similar to
+        plain `FluentAssertions`.
+    - name: ScenarioTests
+      url: https://github.com/koenbeuk/ScenarioTests
+      description: Test your code like you would write a notebook. Simply and effective
+    subcategories:
+      mocking:
+        name: Mocking
+        repositories:
+        - name: GRPC-Mock-Server
+          url: https://github.com/cezarypiatek/GRPC-Mock-Server
+          description: A source generator for stubbing GRPC services.
+        - name: InterfaceGenerator
+          url: https://github.com/daver32/InterfaceGenerator
+          description: Auto generate interface definition by implementation, for when you need an abstraction for the sake
+            of mocking.
+        - name: MockableStaticGenerator
+          url: https://github.com/HamedFathi/MockableStaticGenerator
+          description: A C# source generator to make an interface and a class wrapper to test static/extension methods.
+        - name: MockGen
+          url: https://github.com/thomas-girotto/MockGen
+          description: A C# mocking library based on source generators.
+        - name: MockSourceGenerator
+          url: https://github.com/hermanussen/MockSourceGenerator
+          description: A C# mocking library that generates mocks at compile-time using a source generator.
+        - name: ProxyInterfaceGenerator
+          url: https://github.com/StefH/ProxyInterfaceSourceGenerator
+          description: generate an interface and a Proxy class for classes. This makes it possible to wrap external classes
+            which do not have an interface, in a Proxy class which makes it easier to Mock and use DI.
+        - name: Rocks
+          url: https://github.com/JasonBock/Rocks
+          description: A mocking library based on the Compiler APIs (Roslyn + Mocks).
+  patterns:
+    name: Patterns
+    repositories:
+    - name: ActorSrcGen
+      url: https://github.com/aabs/ActorSrcGen
+      description: Generates boilerplate to turn simple C# classes into TPL Dataflow compatible pipelines with robust and
+        performant asynchronous and concurrent code.
+    - name: InlineComposition
+      url: https://github.com/BlackWhiteYoshi/InlineComposition
+      description: A source generator that merges the content of other classes into one class. A simple workaround for struct
+        inheritance or multiple inheritance.
+    - name: JinShil.MixinSourceGenerator
+      url: https://github.com/JinShil/JinShil.MixinSourceGenerator
+      description: A simple, but powerful source generator that implements the mixin design pattern by copying members—along
+        with their attributes and XML documentation comments—verbatim from one or more source classes/structs into anaother,
+        forming a composition of said classes/structs.
+    - name: Lombok.NET
+      url: https://github.com/CollinAlpert/Lombok.NET
+      description: Generates boilerplate code and common code patterns. As the name suggests, it is the .NET version of Java's
+        Lombok.
+    - name: Minerals.AutoMixins
+      url: https://github.com/SzymonHalucha/Minerals.AutoMixins
+      description: Package for automatic mixin design pattern generation using an incremental source generator.
+    - name: Minerals.AutoCQRS
+      url: https://github.com/SzymonHalucha/Minerals.AutoCQRS
+      description: NuGet package that provides interfaces for implementing the CQRS pattern (Commands, Queries, and Pipelines)
+        along with automatic dependency injection and no MediatR package overhead.
+    subcategories:
+      mediator:
+        name: Mediator
+        repositories:
+        - name: DumplingsDevs.Pipelines
+          url: https://github.com/DumplingsDevs/Pipelines
+          description: The most flexible mediation implementation in the .NET ecosystem with your own types.
+        - name: Foundatio Mediator
+          url: https://github.com/FoundatioFx/Foundatio.Mediator
+          description: Blazingly fast, convention-based C# mediator powered by source generators and interceptors.
+        - name: Immediate.Handlers
+          url: https://github.com/immediateplatform/Immediate.Handlers
+          description: An implementation of the Mediator pattern in .NET using source generators, without using a central
+            mediator instance.
+        - name: Mediator
+          url: https://github.com/martinothamar/Mediator
+          description: a high performance implementation of Mediator pattern in .NET using source generators.
+        - name: MediatR controllers generator
+          url: https://github.com/Burgyn/MMLib.MediatR.Generators
+          description: This generator generates controllers and their methods based on your [MediatR](https://github.com/jbogard/MediatR)
+            requests.
+      command:
+        name: Command
+        repositories:
+        - name: Plastic
+          url: https://github.com/sang-hyeon/Plastic
+          description: This project provides encapsulation of things like Domain, Application Rules, Business Rules or Business
+            Logic in Application.
+      builder:
+        name: Builder
+        repositories:
+        - name: Data Builder Generator
+          url: https://github.com/dasMulli/data-builder-generator
+          description: Generate data builder patterns for your model classes.
+        - name: FluentBuilder
+          url: https://github.com/StefH/FluentBuilder
+          description: A project which uses Source Generation to create a FluentBuilder for a specified model or DTO.
+        - name: M31.FluentAPI
+          url: https://github.com/m31coding/M31.FluentAPI
+          description: Generate fluent APIs for your C# classes with ease.
+        - name: StepwiseBuilderGenerator
+          url: https://github.com/Georgiy-Petrov/StepwiseBuilderGenerator
+          description: Generate stepwise (fluent) builders effortlessly.
+      proxy:
+        name: Proxy
+        repositories:
+        - name: avatar
+          url: https://github.com/kzu/avatar
+          description: A modern compile-time generated interception/proxy library.
+        - name: DudNet
+          url: https://github.com/jwshyns/DudNet
+          description: A C# source generator for implementing a proxy pattern.
+      visitor:
+        name: Visitor
+        repositories:
+        - name: MrMeeseeks.Visitor
+          url: https://github.com/Yeah69/MrMeeseeks.Visitor
+          description: Generates the boilerplate code for applications of the Visitor pattern.
+        - name: Visitor.NET
+          url: https://github.com/Stepami/visitor-net
+          description: First-ever acyclic generic extensible typesafe implementation of Visitor pattern for .NET without any
+            usage of dynamic cast. Implementation powered by Source Generators
+      adapter:
+        name: Adapter
+        repositories:
+        - name: AutoInterface
+          url: https://github.com/beakona/AutoInterface
+          description: interface-to-member source generator.
+        - name: Minerals.AutoInterfaces
+          url: https://github.com/SzymonHalucha/Minerals.AutoInterfaces
+          description: Package for automatic interface generation using an incremental source generator.
+      fluent-api:
+        name: Fluent API
+        repositories:
+        - name: SuperFluid
+          url: https://github.com/hughesjs/SuperFluid
+          description: Generates the interfaces to represent a fluent API with grammar
+  domain-driven-design-ddd:
+    name: Domain Driven Design (DDD)
+    repositories:
+    - name: AltaSoft.DomainPrimitives
+      url: https://github.com/altasoft/DomainPrimitives
+      description: A C# toolkit purposefully designed to accelerate the development of domain-specific primitives within your
+        applications. This streamlined solution empowers developers to efficiently encapsulate fundamental domain logic. Through
+        this toolkit, you'll significantly reduce code complexity while improving the maintainability of your project.
+    - name: Architect.DomainModeling
+      url: https://github.com/TheArchitectDev/Architect.DomainModeling
+      description: A complete Domain-Driven Design (DDD) toolset for implementing domain models, including base types and
+        source generators for ValueObjects, WrapperValueObjects, Entities, and Identities.
+    - name: Minerals.AutoDomain
+      url: https://github.com/SzymonHalucha/Minerals.AutoDomain
+      description: This package provides a fast method of defining domain layer components with their specific implementation,
+        such as aggregates, entities and domain events. Package has built-in strongly typed IDs.
+  metaprogramming:
+    name: Metaprogramming
+    repositories:
+    - name: GenerateHelperLibraries
+      url: https://github.com/musictopia2/GenerateHelperLibraries
+      description: A source generator where you can send any code to the client without having to do as a string.  Helper
+        for custom classes a client has to override in order to have additional features for source generators.  Intended
+        to be used from another source generator.
+    - name: Gobie
+      url: https://github.com/GobieGenerator/Gobie
+      description: Allows developers define and use custom source generation without writing any generator code themselves
+        or learning the Roslyn APIs. Instead, devs define the generator they want, in C#, and can then use that generator
+        throughout their project.
+    - name: Matryoshki
+      url: https://github.com/krasin-ga/matryoshki
+      description: Metaprogramming framework based on C# source generators. It allows you to define behaviours with adornments
+        and generate decorators for arbitrary types.
+    - name: SourceGeneratorQuery
+      url: https://github.com/roeibajayo/SourceGeneratorQuery
+      description: C# SourceGenerator helper which helps you query your files, and adds LINQ support.
+  webprogramming:
+    name: Webprogramming
+    repositories:
+    - name: AjaxService.Gen
+      url: https://github.com/MrAliSalehi/AjaxService
+      description: Automatically Generate typescript Ajax calls based on your C# Api endpoints.
+    - name: ApiClientGenerator
+      url: https://github.com/surgicalcoder/ApiClientGenerator
+      description: Generates a strongly typed HttpClient based off MVC's default routing. Can be used to output into multiple
+        projects, like Blazor WebAssembly.
+    - name: ControllerGenerator
+      url: https://github.com/cloud0259/ControllerGenerator
+      description: Automatically generate controllers from services in a web application
+    - name: HttpClientCodeGenerator
+      url: https://github.com/Jalalx/HttpClientCodeGenerator
+      description: HttpClientGenerator is a tool that uses the Roslyn code generator feature to write boilerplate HttpClient
+        code for you.
+    - name: Immediate.Apis
+      url: https://github.com/immediateplatform/immediate.apis
+      description: Generates minimal APIs bindings for [Immediate.Handlers](https://github.com/immediateplatform/immediate.handlers)
+        handlers.
+    - name: Ridge
+      url: https://github.com/Melchy/Ridge
+      description: Generates strongly-typed clients for API based on controller definition and internal application details.
+    - name: Safe-Routing
+      url: https://github.com/daviddotcs/safe-routing
+      description: Analyses a project's razor pages and MVC controllers, producing strongly-typed representations of those
+        routes as you type
+    - name: TypedSignalR.Client
+      url: https://github.com/nenoNaninu/TypedSignalR.Client
+      description: C# Source Generator to create strongly typed SignalR clients.
+    subcategories:
+      open-api:
+        name: Open Api
+        repositories:
+        - name: H.NSwag.Generator
+          url: https://github.com/HavenDV/H.NSwag.Generator
+          description: C# Source Generator for NSwag.
+        - name: SourceApi
+          url: https://github.com/alekshura/SourceApi
+          description: API first Open API code generator based on json or yaml definitions. It generates base abstract controllers
+            with docs, routes, that you inherit and implement in your controllers.
+        - name: ST.NSwag.ServerSourceGenerator
+          url: https://github.com/s-tarasov/ST.NSwag.ServerSourceGenerator
+          description: Generates Web API/ASP.NET Core controllers from a OpenAPI specification.
+      razor--blazor:
+        name: Razor / Blazor
+        repositories:
+        - name: Blazor.TSRuntime
+          url: https://github.com/BlackWhiteYoshi/Blazor.TSRuntime
+          description: An improved JSRuntime with automatic JS-module loading and caching, compile time errors instead of
+            runtime errors and nice IntelliSense guidance.
+        - name: BlazorInteropGenerator
+          url: https://github.com/surgicalcoder/BlazorInteropGenerator
+          description: Generates Blazor -> Javascript strongly typed interop methods, by parsing the Javascript it self and
+            generating extension methods for IJSRuntime.
+        - name: BlazorOcticons
+          url: https://github.com/BlazorOcticons/BlazorOcticons
+          description: Github [Octicons](https://primer.style/octicons/) created as a `.razor` components using source generator.
+            The generated components are available via the NuGet package, the generator itself is available as a separate
+            NuGet package. The project [website](https://blazorocticons.net/) is an example using the generated components.
+        - name: MiniRazor
+          url: https://github.com/Tyrrrz/MiniRazor
+          description: Portable Razor compiler & code generator.
+        - name: RazorPageRouteGenerator
+          url: https://github.com/surgicalcoder/RazorPageRouteGenerator
+          description: Generates methods with parameters for Razor and Blazor pages, so you can navigate without having to
+            guess URLs or parameters.
+  xaml--wpf--avalonia:
+    name: XAML / WPF / Avalonia
+    repositories:
+    - name: Avalonia.NameGenerator
+      url: https://github.com/AvaloniaUI/Avalonia.NameGenerator
+      description: Generates typed references to named [Avalonia](https://github.com/avaloniaui) XAML controls.
+    - name: boilerplatezero
+      url: https://github.com/IGood/boilerplatezero
+      description: WPF Dependency Property and Routed Event generator.
+    - name: DependencyPropertyGenerator
+      url: https://github.com/HavenDV/DependencyPropertyGenerator
+      description: Dependency property and routed event source generator for WPF/UWP/WinUI/Uno/Avalonia/MAUI platforms.
+    - name: WinUI-ObservableSettings
+      url: https://github.com/JasonWei512/WinUI-ObservableSettings
+      description: Generate boilerplates to read and write settings in packaged WinUI 3 app.
+    subcategories:
+      inotifypropertychanged:
+        name: INotifyPropertyChanged
+        repositories:
+        - name: PropertyChanged.SourceGenerator
+          url: https://github.com/canton7/PropertyChanged.SourceGenerator
+          description: Powerful INotifyPropertyChanged Source Generator, which generates INPC boilerplate for you as part
+            of your build. Supports features such as automatic and manual dependencies between properties, notifications when
+            specific properties change, and more.
+        - name: ValueChangedGenerator
+          url: https://github.com/ufcpp/ValueChangedGenerator
+          description: for generating PropertyChanged from inner struct members.
+      model-view-viewmodel-mvvm:
+        name: Model View Viewmodel (MVVM)
+        repositories:
+        - name: DevExpress.Mvvm.CodeGenerators
+          url: https://github.com/DevExpress/DevExpress.Mvvm.CodeGenerators
+          description: Generates boilerplate code for your View Models (INotifyPropertyChanged, Commands, IDataErrorInfo,
+            DevExpress services). Compatible with the Prism and MVVM Light libraries.
+        - name: Microsoft MVVM Toolkit
+          url: https://github.com/CommunityToolkit/dotnet
+          description: A modular MVVM library with support for source generators to reduce boilrplate and improve performance.
+        - name: MvvmGen
+          url: https://github.com/thomasclaudiushuber/mvvmgen
+          description: A lightweight MVVM library for XAML applications that generates your ViewModels with a C# Source Generator.
+  database--orm:
+    name: Database / ORM
+    repositories:
+    - name: AdaskoTheBeAsT.Identity.Dapper
+      url: https://github.com/AdaskoTheBeAsT/AdaskoTheBeAsT.Identity.Dapper
+      description: Custom Dapper implementation for Microsoft.Extensions.Identity.Stores (part of ASP.NET Core Identity)
+    - name: AutoDbSet
+      url: https://github.com/Atulin/AutoDbSet
+      description: Source Generator to automatically create `DbSet<T>` properties on the `DbContext` from marked entities
+    - name: Breezy
+      url: https://github.com/Ludovicdln/Breezy
+      description: Micro ORM with source generator.
+    - name: Dynatello
+      url: https://github.com/inputfalken/Dynatello
+      description: A source generator for the low-level API of DynamoDB.
+    - name: EntityLengths.Generator
+      url: https://github.com/TarasKovalenko/EntityLengths.Generator
+      description: Source Generator designed to automatically generate string length constants from Entity Framework configurations
+        and data annotations.
+    - name: MapDataReader
+      url: https://github.com/jitbit/MapDataReader
+      description: Fast mapping `IDataReader` to a custom class
+    - name: NpgsqlSourceGenerators
+      url: https://github.com/Atulin/NpgsqlSourceGenerators
+      description: Source Generator to automatically register marked enums with NpgSQL for use with PostgreSQL
+    - name: SqlMarshal
+      url: https://github.com/kant2002/SqlMarshal
+      description: Native AOT friendly-performant mini-ORM. Generation of wrappers for accessing SQL using ADO.NET.
+    - name: TableStorage
+      url: https://github.com/StevenThuriot/TableStorage
+      description: Streamlined way of working with Azure Data Tables that mimics Entity Framework's way of working with DbSets.
+        Source Generators for the Table Entities to avoid any reflection calls being made, making it easier to use Azure Data
+        Tables in a NativeAOT project.
+    - name: Unflat
+      url: https://github.com/pstlnce/unflat
+      description: ORM for zero allocation fast parsing into complex classes/structs with custom type parsers support
+  statically-typed-resources--configurations:
+    name: Statically typed resources / configurations
+    repositories:
+    - name: dot-env-generator
+      url: https://github.com/RainwayApp/dot-env-generator
+      description: A source generator for C# that turns `.env` files into runtime constants.
+    - name: EnvVariablesGenerator
+      url: https://github.com/KAW0/EnvVariablesGenerator
+      description: Generate code from `.env` files that can be changed after build.
+    - name: NotNot.AppSettings
+      url: https://github.com/jasonswearingen/NotNot.AppSettings
+      description: Automatically create strongly typed C# settings objects from AppSettings.json.
+    - name: SourceConfig
+      url: https://github.com/alekshura/SourceConfig
+      description: Generates configuration POCO objects, lists, dictionaries in AOT based on *.json config files.
+    - name: StronglyTypedEmbeddedResources
+      url: https://github.com/surgicalcoder/StronglyTypedEmbeddedResources
+      description: Generates strongly typed names for Embedded Resources automatically.
+    - name: TxtToListGenerator
+      url: https://github.com/musictopia2/TxtToListGenerator
+      description: A source generator where if you have a text file as additional file and you have a list ordered by return
+        carriages, then it produces either a list of int or a list of string in c#.
+  text-templating:
+    name: Text templating
+    repositories:
+    - name: Transplator
+      url: https://github.com/atifaziz/Transplator
+      description: A simple C# source generator for text templates.
+    - name: Weave
+      url: https://github.com/otac0n/Weave
+      description: Weave is a text templating engine for .NET that is all about attention to detail. Weave handles the tricky
+        work of making your rendered text beautiful.
+    - name: TemplatePropertyGenerator
+      url: https://github.com/JKamsker/JKToolKit.TemplatePropertyGenerator
+      description: Generates strongly typed stringformatters based on Stringformats
+  other:
+    name: Other
+    repositories:
+    - name: AssemblyVersionInfo
+      url: https://github.com/BlackWhiteYoshi/AssemblyVersionInfo
+      description: AssemblyVersionInfo is a very simple source generator that generates constant strings of your assembly
+        name and version. The intended usage is for the System.CodeDom.Compiler.GeneratedCodeAttribute.
+    - name: AutoConstructor
+      url: https://github.com/k94ll13nn3/AutoConstructor
+      description: C# source generator that generates a constructor from readonly fields/properties in a class or struct.
+    - name: AutoFilterer.Generators
+      url: https://github.com/enisn/AutoFilterer/blob/develop/docs/generators/AutoFilterer-Generators.md
+      description: AutoFilterer.Generators aims to generate filter DTOs from entities automatically via using dotnet source
+        generators.
+    - name: AutoInterface
+      url: https://github.com/BlackWhiteYoshi/AutoInterface
+      description: AutoInterface is a source generator that generates an interface based on your class/struct. Basically,
+        you write your class and get the corresponding interface for free.
+    - name: AutoInvoke
+      url: https://github.com/LokiMidgard/AutoInvoke.Generator
+      description: A generator that generates a method that invokes a specified generic method, for every Type in your project
+        that satisfies a defined constraint.
+    - name: AutoLoggerMessage
+      url: https://github.com/stbychkov/AutoLoggerMessage
+      description: Automatically migrates your logging calls to the LoggerMessage (high-performance logging) version
+    - name: AutomaticInterface
+      url: https://github.com/codecentric/net_automatic_interface
+      description: Generate an Interface from a class.
+    - name: BigMachines
+      url: https://github.com/archi-Doc/BigMachines
+      description: BigMachines is State Machine library for .NET.
+    - name: BuildInformationGenerator
+      url: https://github.com/pekspro/BuildInformationGenerator
+      description: Adds build information, like build time, commit id and branch, as simple constants.
+    - name: CacheSourceGenerator
+      url: https://github.com/jeppevammenkristensen/cachesourcegenerator
+      description: Generates an IMemoryCache wrapper around a method call.
+    - name: Cloneable
+      url: https://github.com/mostmand/Cloneable
+      description: auto-generate Clone method.
+    - name: Credfeto.Version.Information.Generator
+      url: https://github.com/credfeto/credfeto-version-constants-generator
+      description: Minimal source generator for embedding build information as compile time constants. Constants added to
+        `VersionInformation` class in each assembly for `Version`, `Product`, `Company` and `Copyright`.
+    - name: CsCodeGenerator
+      url: https://github.com/borisdj/CsCodeGenerator
+      description: Easy C# class and code generation, POCO object and Methods creation.
+    - name: DataAnnotationValuesExtractor
+      url: https://github.com/pekspro/DataAnnotationValuesExtractor
+      description: Extracts values from data annotation attributes, like maximum string length, and exposes them as strongly-typed
+        constants.
+    - name: Dolly
+      url: https://github.com/AnderssonPeter/Dolly
+      description: auto-generate Clone & DeepClone method.
+    - name: Durian
+      url: https://github.com/piotrstenke/Durian
+      description: Extends the default capabilities of C# by mimicking features from other languages.
+    - name: Fairy
+      url: https://github.com/hermanussen/Fairy
+      description: generates C# code based on Sitecore Content Serialization (SCS) `.yml` files.
+    - name: FastGenericNew
+      url: https://github.com/Nyrest/FastGenericNew
+      description: The ultimate fast alternative to `Activator.CreateInstance<T>` / `new T()`.  Built on SourceGenerator V2
+        (Incremental Generator).
+    - name: GitBuildInfo.SourceGenerator
+      url: https://github.com/Elskom/GitBuildInfo.SourceGenerator
+      description: for dumping the git information (commit hash, branch, the head description) into assembly level metadata
+        attributes.
+    - name: Hangfire.RecurringJob
+      url: https://github.com/IeuanWalker/Hangfire.RecurringJob
+      description: Automatically generates the recurring job registration code.
+    - name: IDisposableGenerator
+      url: https://github.com/Elskom/IDisposableGenerator
+      description: a Source Generator for Generating the Dispose functions in Disposables. All you have to do is mark them
+        with attributes and it will work from there.
+    - name: Lazysh
+      url: https://github.com/B1Z0N/LazyshGen
+      description: Lazy implementation of any interface.
+    - name: LinqGen
+      url: https://github.com/cathei/LinqGen
+      description: Alloc-free and fast replacement for Linq, with code generation.
+    - name: LoggingDecoratorGenerator
+      url: https://github.com/DavidFineboym/LoggingDecoratorGenerator
+      description: Generates logger decorator class for an interface. Uses Microsoft.Extensions.Logging.ILogger to log and
+        requires it in decorator class constructor.
+    - name: MemberAccessGenerator
+      url: https://github.com/ufcpp/MemberAccessGenerator
+      description: generates `GetMember(int)` and/or `GetMember(string)` methods that return property value for a given property
+        name or index (e.g. in positional records).
+    - name: MrMeeseeks.StaticDelegateGenerator
+      url: https://github.com/Yeah69/MrMeeseeks.StaticDelegateGenerator
+      description: Makes static classes and members injectable as dependency by generating delegating interfaces and their
+        implementing classes.
+    - name: Navitski.Crystalized
+      url: https://github.com/AlexNav73/Navitski.Crystalized
+      description: Generates domain model based on schema files. Generated model supports undo/redo, saving to/loading from
+        SQLite and Json files, precise changes tracking and more.
+    - name: PolySharp
+      url: https://github.com/Sergio0694/PolySharp
+      description: Provides generated, source-only polyfills for C# language features, to easily use all runtime-agnostic
+        features downlevel.
+    - name: PrimaryConstructor
+      url: https://github.com/chaowlert/PrimaryConstructor
+      description: Generate primary constructor from readonly fields.
+    - name: PrimitiveStaticDataGenerator
+      url: https://github.com/iiweis/PrimitiveStaticDataGenerator
+      description: for creating methods that return optimized `ReadOnlySpan<T>` static data from primitive values.
+    - name: PrintMembersGenerator
+      url: https://github.com/Youssef1313/PrintMembersGenerator
+      description: helps re-defining C# record's PrintMembers method to force include/exclude certain members.
+    - name: QuickConstructor
+      url: https://github.com/flavien/QuickConstructor
+      description: A reliable and feature-rich source generator that can automatically emit a constructor from the fields
+        and properties of a class. It can also generate null checks based on nullable reference types annotations.
+    - name: SmallSharp
+      url: https://github.com/kzu/SmallSharp
+      description: Create, edit and run multiple C# 9.0 top-level programs in the same project by just selecting the startup
+        program from the start button.
+    - name: SmartAnnotations
+      url: https://github.com/fiseni/SmartAnnotations
+      description: A library that uses source generators to automatically generate data annotations for your models. It provides
+        a strongly-typed mechanism (fluent like API) to define your annotation rules.
+    - name: StringLiteralGenerator
+      url: https://github.com/ufcpp/StringLiteralGenerator
+      description: for optimizing UTF-8 binaries.
+    - name: SyncMethodGenerator
+      url: https://github.com/zompinc/sync-method-generator
+      description: Generates a synchronized method from your async code.
+    - name: ThisAssembly
+      url: https://github.com/kzu/ThisAssembly
+      description: Exposes project and assembly level information as constants in the ThisAssembly class.
+    - name: ToString
+      url: https://github.com/Burgyn/MMLib.ToString
+      description: C# source generator for implementing `ToString` override like `record` type.
+    - name: TupleOverloadGenerator
+      url: https://github.com/ProphetLamb/TupleOverloadGenerator
+      description: Overload `params` array parameter with tuples avoiding heap allocations.
+    - name: ValueLink
+      url: https://github.com/archi-Doc/ValueLink
+      description: A C# Library for creating and managing multiple links between objects.
+meta:
+- name: AttributeFactoryGenerator
+  url: https://github.com/PaulBraetz/AttributeFactoryGenerator
+  description: Generate factories to easily parse actual attribute instances from symbol data.
+- name: AttributesSourceGeneratorHelper
+  url: https://github.com/musictopia2/AttributesSourceGeneratorHelper
+  description: A source generator to help another generator by producing attributes.  Anything that inherits from Attribute
+    will be sent to the client so you don't have to build strings for attributes.
+- name: CommonSourceGeneratorsHelpers
+  url: https://github.com/musictopia2/CommonSourceGeneratorsHelpers
+  description: A generator to create many helpers for source generators to use to make up that its very difficult to reference
+    third party libraries in source generators including extensions and a source code string builder.
+- name: HotReload
+  url: https://github.com/andrzejolszak/BuilderGeneratorHotReload
+  description: A simple hack to enable hot reload in Visual Studio Intellisense when developing a source generator project
+    together with an example dependent client project inside a single solution.
+- name: SourceGeneratorUtils
+  url: https://github.com/thenameless314159/SourceGeneratorUtils
+  description: An essential library equipped with utility functions and helpers to aid in writing source files for source
+    generators or for general purposes. Based on the `System.Text.Json` source generator architecture for best-practices.
+- name: SourceGenerator.Helper.CopyCode
+  url: https://github.com/LokiMidgard/SourceGenerator.Helper.CopyCode
+  description: A simple Generator that generates a string representation to an annotated Type.
+articles:
+- '[Title](URL) (YYYY-MM-DD) short description.'
+- '[Series: Creating a source generator](https://andrewlock.net/series/creating-a-source-generator/) (2022-02-01) Complete
+  series about how to create an incremental source generator, using the APIs introduced in .NET 6.'
+- '[Mastering at Source Generators](https://medium.com/c-sharp-progarmming/mastering-at-source-generators-18125a5f3fca) (2022-01-15)
+  Generating CRUD controller from DTO model using text template.'
+- '[Using C# Source Generators to create an external DSL](https://devblogs.microsoft.com/dotnet/using-c-source-generators-to-create-an-external-dsl/)
+  (2021-01-27) that shows how to implement a simple DSL.'
+- '[4 ways to generate code in C# — Including Source Generators in .NET 5](https://levelup.gitconnected.com/four-ways-to-generate-code-in-c-including-source-generators-in-net-5-9e6817db425)
+  (2021-01-19) demonstrates the comparison between Source Generators, T4 template and Reflection, etc.'
+- '[.NET 5 Source Generators - MediatR - CQRS - OMG!](https://www.edument.se/en/blog/post/net-5-source-generators-mediatr-cqrs)
+  (2020-12-16) explores how source generators can be used to automatically generate an API for a system using the MediatR
+  library and the CQRS pattern.'
+- '[Source Generators in .NET 5 with ReSharper](https://blog.jetbrains.com/dotnet/2020/11/12/source-generators-in-net-5-with-resharper/)
+  (2020-11-20) introduces source generators and briefly mentions how they are being worked into the ReSharper product.'
+- '[Source Generators - real world example](https://dominikjeske.github.io/source-generators) (2020-11-09) contains a rich
+  and deep dive into a real world generator with lots of useful tips.'
+- '[How to profile C# 9.0 Source Generators](https://jaylee.org/archive/2020/10/10/profiling-csharp-9-source-generators.html)
+  (2020-10-10) demonstrates how to profile your source generator using the [performance profiling tools built into Visual
+  Studio](https://docs.microsoft.com/en-us/visualstudio/profiling/?view=vs-2019).'
+- '[How to Debug C# 9 Source Code Generators](https://nicksnettravels.builttoroam.com/debug-code-gen/) (2020-10-09) contains
+  debugging tips.'
+- '[How to generate code using Roslyn source generators in real world scenarios](https://www.cazzulino.com/source-generators.html)
+  (2020-09-17) rich story of how ThisAssembly generator was written using Scriban templates.'
+- '[.NET Blog ''New C# Source Generator Samples'' post](https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/)
+  (2020-08-25) that shows some simple samples.'
+- '[.NET Blog ''Introducing C# Source Generators'' post](https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/)
+  (2020-04-29) that announces the feature.'
+videos:
+- '[Title](URL) (YYYY-MM-DD) short description.'
+- '[C# Source Generators - Write code that writes code - David Wengier](https://www.youtube.com/watch?v=pqLs7X6Cr6s) (2020-11-13)
+  Roslyn dev takes deep dive into the topic.'
+- '[.NET Languages and Runtime Community Standup - Source Generators](https://www.youtube.com/watch?v=A4479Etdx4I) (2020-10-08)
+  shows how Generators work and how they can be tested.'
+- '[Channel 9 ''Source Generators in C#''](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Source-Generators-in-CSharp)
+  (2020-08-12) has Roslyn PMs discussing the feature.'
+demo_projects:
+- name: Compile Time Method Execution Generator
+  url: https://github.com/hermanussen/CompileTimeMethodExecutionGenerator
+  description: proof of concept that allows executing a method during compilation, so that it can be really fast during runtime.
+- name: DpdtInject
+  url: https://github.com/lsoft/DpdtInject
+  description: DI container based on C# Source Generators. Its goal is to remove everything possible from runtime and make
+    resolving process as faster as we can. This is achieved by transferring huge piece of resolving logic to the compilation
+    stage into the source generator.
+- name: jakubsturc/talk-csharp-source-generators
+  url: https://github.com/jakubsturc/talk-csharp-source-generators/tree/master/demo/SourceGeneratorSamples
+  description: 'contains 4 generators: AutoNotify, ConsoleWritelineHijack, HelloWorld and SettingsXml, plus nice presentation
+    slides.'
+- name: RyanAlameddine/SourceGeneratorDemo
+  url: https://github.com/RyanAlameddine/SourceGeneratorDemo
+  description: 'contains 3 demos: hello world, INPC and OpCode class.'
+- name: TMC-CSharp/CodeExerciseLibrary
+  url: https://github.com/TMC-CSharp/CodeExerciseLibrary
+  description: Library to help creating C# exercises. Generates missing methods and classes inside tests on the fly by using
+    Source Generators.
+projects_using_generators:
+- name: Elskom/Sdk
+  url: https://github.com/Elskom/Sdk
+  description: Dumps git repository data to assembly level metadata attributes that can be checked at runtime for things like
+    trapping if a user is using an possibly unstable build of the libraries built in the repository and so the user can see
+    a message about it (and optionally opt into running the possibly unstable code).
+- name: Heroicons.AspNetCore
+  url: https://github.com/tompazourek/Heroicons.AspNetCore
+  description: '[Heroicons](https://heroicons.com/) that are easy to use in ASP.NET Core MVC as TagHelpers.'
+- name: HydraScript
+  url: https://github.com/Stepami/hydrascript
+  description: TypeScript & Go inspired small interpreted programming language written in C# that uses Source Generator to
+    build large regular expression for lexical analysis. The regex value is passed to `[GeneratedRegex]` attribute, so this
+    internal generator generates the input for another generator.
+- name: NetFabric.Hyperlinq
+  url: https://github.com/NetFabric/NetFabric.Hyperlinq
+  description: generates overloads for its extension methods.
+- name: RestEase
+  url: https://github.com/canton7/RestEase
+  description: uses Source Generator to generate interface implementations on compile time instead of in runtime via Reflection.Emit.
+- name: WarHub/wham
+  url: https://github.com/WarHub/wham
+  description: generates code for immutable tree object graph based on red-green node approach used in Roslyn; generates custom
+    XmlSerializer that supports C#9 records and ImmutableArray.
+tips_and_tricks: "Collection of tips and tricks (simple and brief to fit in Tweet):\n\n[Tweeted](https://twitter.com/raboof/status/1397296571801288704)\
+  \ by [@raboof](https://twitter.com/raboof) on May 25 2021 at 23:00:\n\n> TIL to debug a source generator in VS 16.10: upgrade\
+  \ [Microsoft.CodeAnalysis.CSharp to 3.10.\\*](https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/3.10.0-3.final),\
+  \ add `<IsRoslynComponent>true</IsRoslynComponent>` to source generator project, select **Roslyn Component** for **Launch**\
+  \ in **Project Properties Debug** page, choose **Target** then <kbd>F5</kbd> :rocket:\n>\n> ![Source Generator debugger](https://docs.microsoft.com/en-us/visualstudio/releases/2019/media/16.10/16.10_p2_source_generators_debugger.png)\n\
+  \n[Tweeted](https://twitter.com/raboof/status/1328426892882550784) by [@raboof](https://twitter.com/raboof) on Nov 16 2020\
+  \ at 20:57:\n\n> See files emitted by [#SourceGenerators] by adding these properties to your (*.csproj) project file:\n\
+  >\n> ```xml\n> <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>\n> <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>\n\
+  > ```\n\n[Tweeted](https://twitter.com/Chiser99/status/1301198611158499328) by [@Chiser99](https://twitter.com/Chiser99)\
+  \ on Sep 02 2020 at 06:41:\n\n> I made a thing: https://github.com/chsienki/Kittitas\n>\n> If you're building Roslyn Source\
+  \ Generators or Analyzers check it out, it makes debugging them inside the compiler easier. #roslyn #csharp #dotnetcore\
+  \ #sourcegenerators #analyzers\n\nBuild failed in WPF projects [microsoft/CsWin32#7](https://github.com/microsoft/CsWin32/issues/7):\n\
+  \n> If your build failed in a *_wpftmp.csproj file you need to add following property to your (*.csproj) project file:\n\
+  > ```xml\n> <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>\n> ```\n\
+  >\n> and use at least .NET 5.0.102 SDK\n\n  [#SourceGenerators]: https://twitter.com/hashtag/SourceGenerators?src=hashtag_click\n\
+  \  [#sourcegenerators]: https://twitter.com/hashtag/sourcegenerators?src=hashtag_click\n  [#roslyn]: https://twitter.com/hashtag/roslyn?src=hashtag_click\n\
+  \  [#csharp]: https://twitter.com/hashtag/csharp?src=hashtag_click\n  [#dotnetcore]: https://twitter.com/hashtag/dotnetcore?src=hashtag_click\n\
+  \  [#analyzers]: https://twitter.com/hashtag/analyzers?src=hashtag_click\n\nReference local projects or embed NuGet packages\
+  \ to source generator assemblies [dotnet/roslyn#47517](https://github.com/dotnet/roslyn/discussions/47517#discussioncomment-64145):\n\
+  \n⚠ Please be aware that this may result in crashes, when another generator or SDK component loads such an assembly with\
+  \ lower version. If you can, please avoid embedding additional DLLs/packages.\n\n> You can add a dependency to a source\
+  \ generator in the same solution through three steps:\n> \n> 1. Add a `<PackageReference>`, making sure to set both `GeneratePathProperty=\"\
+  true\"` and `PrivateAssets=\"all\"`\n> 2. Add a build target to add `<TargetPathWithTargetPlatformMoniker>` elements as\
+  \ part of GetTargetPath, and add all the required dependency assemblies inside this target, making sure to set `IncludeRuntimeDependency=\"\
+  false\"`\n> 3. Update `<GetTargetPathDependsOn>` to ensure the target from the previous step is used\n> \n> You can see\
+  \ an example of these steps here:\n> https://github.com/dotnet/roslyn-sdk/blob/0313c80ed950ac4f4eef11bb2e1c6d1009b328c4/samples/CSharp/SourceGenerators/SourceGeneratorSamples/SourceGeneratorSamples.csproj#L13-L30"
