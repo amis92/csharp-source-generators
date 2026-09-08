@@ -508,6 +508,7 @@ Reference local projects or embed NuGet packages to source generator assemblies 
   - [Title](URL) (YYYY-MM-DD) short description.
 -->
 
+- [C# Source Generators – Why and How](https://www.youtube.com/watch?v=CLTSkEr3wmQ) (2025-12-16) learn how C# source generators work, why they matter, and how they can improve performance.
 - [C# Source Generators - Write code that writes code - David Wengier](https://www.youtube.com/watch?v=pqLs7X6Cr6s) (2020-11-13) Roslyn dev takes deep dive into the topic.
 - [.NET Languages and Runtime Community Standup - Source Generators](https://www.youtube.com/watch?v=A4479Etdx4I) (2020-10-08) shows how Generators work and how they can be tested.
 - [Channel 9 'Source Generators in C#'](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Source-Generators-in-CSharp) (2020-08-12) has Roslyn PMs discussing the feature.
